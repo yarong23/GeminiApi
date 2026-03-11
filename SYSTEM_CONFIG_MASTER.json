@@ -1,0 +1,1024 @@
+{
+    "Version": 25,
+    "LastUpdate": "2026-03-11T19:21:53",
+    "Topics": [
+        {
+            "Id": "topic_acid_reflux_001",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-10T19:18:26",
+            "Description": "Acid Reflux, mostly at night time",
+            "active_research_directions": [
+                "Link between gut bicrobiom and reflux"
+            ],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [
+                "Timing of Gaviscon dose",
+                "Avoidance of coffee and hot drinks",
+                "DGL supplement",
+                "Tracking regression of general digestive symptoms"
+            ],
+            "suggested_actions": [
+                "move Gaviscon dose closer to bed time"
+            ],
+            "accepted_actions": [
+                "move Gaviscon dose closer to bed time"
+            ],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_night_sleep_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-10T20:25:00",
+            "Description": "Suboptimal night sleep",
+            "active_research_directions": [
+                "Link between reflux and night sleep",
+                "Evening supplements (Magnesium 300mg, Glycine 3g)"
+            ],
+            "suggested_research_directions": [
+                "Nocturno Forte 7.5mg (Zopiclone)",
+                "Middle of the night awakenings (2:00-3:00 AM)",
+                "Liquid melatonin for returning to sleep",
+                "Sleep hygiene (reading instead of screens)"
+            ],
+            "exhausted_research_directions": [
+                "Seroquel",
+                "Ambien CR 12.5"
+            ],
+            "suggested_actions": [
+                "Track exact time of magnesium and glycine intake relative to the 2:00-3:00 AM awakenings to check for early metabolization"
+            ],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_muscle_weakness_001",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-10T19:18:26",
+            "Description": "Muscle weaknes. I can't run for more than 2 minutes",
+            "active_research_directions": [
+                "Returning to training after 3 years break",
+                "Goal: 10kg weight loss",
+                "07:00-08:15 intense workout (intervals, pull-ups, dips)",
+                "Muscle failure in pull-ups/dips (not cardio limitation)",
+                "Current max: 3 pull-ups, 3 dips per set",
+                "Baseline resting heart rate: 63 bpm"
+            ],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_microbiome_enhancement_001",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-10T19:18:26",
+            "Description": "Microbiom enhancement",
+            "active_research_directions": [
+                "Super Gut Yogurt protocol (L. reuteri, inulin, texture and separation issues)",
+                "Daily Probiotic Stack (4 supplements, >166B CFU)",
+                "Specific strains and goals (Akkermansia for gut lining, mood probiotics for serotonin/dopamine)",
+                "Prebiotics routine (Inulin in yogurt and 5g in morning shake)",
+                "Gut-brain and gut-esophagus axis (link between leaky gut, reflux, and sleep)"
+            ],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_physical_endurance_001",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-10T19:18:26",
+            "Description": "Increase physical endurance",
+            "active_research_directions": [
+                "Extending running duration beyond 2 minutes limit",
+                "Balancing energy between cardio and bodyweight strength (pull-ups/dips)",
+                "Gradual load increase for 10kg weight loss while preventing injuries",
+                "Preventing leaky gut during intense stress via morning nutritional protocol"
+            ],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [
+                "Using smart watch to track intervals, distances, times, and heart rate during morning workout"
+            ],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_supergut_starter_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-11T19:05:00",
+            "Description": "SuperGutYogurtRecipeStarter",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_starter_gen0",
+            "ParentTopicId": "topic_supergut_starter_001",
+            "Type": "StarterHistory",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:05:00",
+            "Description": "Generation 0 Starter",
+            "Data": "20 Billion CFU L. Reuteri (Oxiceutics)",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_starter_gen1",
+            "ParentTopicId": "topic_supergut_starter_001",
+            "Type": "StarterHistory",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:05:00",
+            "Description": "Generation 1 Starter",
+            "Data": "45 grams of the curd of LReuteriGeneration0Version1 yogurt",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_supergut_recipe_001",
+            "BlockVersion": 9,
+            "LastUpdate": "2026-03-11T19:05:00",
+            "Description": "SuperGutYogurtRecipe",
+            "active_research_directions": [
+                "Start incubation with less starter",
+                "Use baking sode to reduce acidity of end result",
+                "Change Inulin amount"
+            ],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [
+                "Incubate withou oxygen"
+            ],
+            "suggested_actions": [],
+            "accepted_actions": [
+                "Use 20g of Generation 2 curds/foam as the starter for the next execution to slow down acidification"
+            ],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_supergut_recipe_v1",
+            "ParentTopicId": "topic_supergut_recipe_001",
+            "Type": "ExecutionHistory",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:05:00",
+            "ExecutionDate": "2026-03-03",
+            "StarterType": "SuperGutYogurtRecipeStarter:Generation1",
+            "MicrobeCountInStarter": "Approx. 598.5 Billion CFU",
+            "Ingredients": {
+                "Milk_ml": 2000,
+                "Cream_ml": 1000,
+                "Inulin_g": 6
+            },
+            "IncubationTemperature": 36,
+            "IncubationTime": 36,
+            "CoolDownTime": 24,
+            "Steps": [
+                "Denature milk and cream",
+                "cool down to IncubationTemperature degrees",
+                "mix the inulin, starter and some cold milk",
+                "add the mixture to the insta pot with the rest of the milk and cream",
+                "put a paper towel on top of the insta pot",
+                "incubate for IncubationTime hours",
+                "refrigerate for CoolDownTime hours"
+            ],
+            "EndResult": {
+                "Taste": "Good but slightly sour",
+                "Consistency": "Separated into curds and whey, but significantly less than the previous batch",
+                "Separation": "Separated"
+            },
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_supergut_recipe_v2",
+            "ParentTopicId": "topic_supergut_recipe_001",
+            "Type": "ExecutionHistory",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:05:00",
+            "ExecutionDate": "2026-03-10",
+            "StarterType": "SuperGutYogurtRecipeStarter:Generation1",
+            "Ingredients": {
+                "Milk_ml": 2000,
+                "Cream_ml": 1000,
+                "Inulin_g": 6
+            },
+            "IncubationTemperature": 36,
+            "IncubationTime": 36,
+            "CoolDownTime": 24,
+            "Steps": [
+                "Denature milk and cream",
+                "cool down to IncubationTemperature degrees",
+                "mix the inulin, starter and some cold milk",
+                "add the mixture to the insta pot with the rest of the milk and cream",
+                "insert a 2-liter bowl into the insta pot to reduce oxygen volume",
+                "put a paper towel on top of the insta pot",
+                "incubate for IncubationTime hours",
+                "refrigerate for CoolDownTime hours"
+            ],
+            "EndResult": {
+                "Consistency": "Separated into curds and whey, no improvement from reduced oxygen",
+                "Separation": "Separated"
+            },
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_probiotic_stack_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-11T19:05:00",
+            "Description": "ProbioticStack",
+            "StartDate": "2026-02-13",
+            "LastUpdateItem": "2026-02-13",
+            "active_research_directions": [
+                "Synergy between the different bacterial strains",
+                "Optimal administration method to ensure maximum colonization and efficacy",
+                "Evaluating if one of the supplements should be dropped to avoid overloading the microbiome"
+            ],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_probiotic_innovix",
+            "ParentTopicId": "topic_probiotic_stack_001",
+            "Type": "ProbioticItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:05:00",
+            "Name": "InnovixLabs, Mood Probiotic",
+            "IsActiveInStack": true,
+            "ActiveIngredients": {
+                "CFU_Billions": 30,
+                "Strains": [
+                    "Lactobacillus helveticus Rosell-52ND",
+                    "Bifidobacterium longum Rosell-175"
+                ]
+            },
+            "Goal": "Support gut-brain axis, improve mood, and reduce stress/anxiety",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_probiotic_youtheory",
+            "ParentTopicId": "topic_probiotic_stack_001",
+            "Type": "ProbioticItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:05:00",
+            "Name": "Youtheory, Spore Probiotic + Triphala Blend",
+            "IsActiveInStack": true,
+            "ActiveIngredients": {
+                "CFU_Billions": 6,
+                "TriphalaBlend_mg": 1000,
+                "Strains": [
+                    "Bacillus clausii MTCC 5980",
+                    "Bacillus subtilis MTCC 5981",
+                    "Bacillus coagulans MTCC 5856"
+                ]
+            },
+            "Goal": "Highly survivable strains for digestion support; Triphala for GI tract toning and detoxification",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_probiotic_lactobif",
+            "ParentTopicId": "topic_probiotic_stack_001",
+            "Type": "ProbioticItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:05:00",
+            "Name": "California Gold Nutrition, LactoBif 100 Probiotics",
+            "IsActiveInStack": false,
+            "ActiveIngredients": {
+                "CFU_Billions": 100,
+                "Strains": [
+                    "Lactobacillus acidophilus",
+                    "Lactobacillus rhamnosus",
+                    "Bifidobacterium lactis",
+                    "Bifidobacterium longum",
+                    "Bifidobacterium plantarum",
+                    "Lactobacillus casei",
+                    "Lactobacillus salivarius",
+                    "Bifidobacterium breve"
+                ]
+            },
+            "Goal": "Broad-spectrum high-potency support for general microbiome balance, gut health, and immune system",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_probiotic_akkermansia",
+            "ParentTopicId": "topic_probiotic_stack_001",
+            "Type": "ProbioticItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:05:00",
+            "Name": "California Gold Nutrition, Akkermansia + Probiotics GLP-1 Complex",
+            "IsActiveInStack": true,
+            "ActiveIngredients": {
+                "CFU_Billions": 30,
+                "TFU_Billions_Akkermansia": 5,
+                "Strains": [
+                    "Bifidobacterium animalis subsp. lactis",
+                    "Bifidobacterium adolescentis",
+                    "Lacticaseibacillus casei",
+                    "Pediococcus acidilactici",
+                    "Pasteurized Akkermansia muciniphila"
+                ]
+            },
+            "Goal": "Strengthen gut lining (mucin production), metabolic support, and stimulate GLP-1 for appetite regulation",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_yogurt_stack_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Description": "YogurtStack",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_yogurt_stack_inulin",
+            "ParentTopicId": "topic_yogurt_stack_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Inulin_g": 10,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_yogurt_stack_acai",
+            "ParentTopicId": "topic_yogurt_stack_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Acai_Powder_g": 5,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_yogurt_stack_glycerin",
+            "ParentTopicId": "topic_yogurt_stack_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Glycerin_g": 1,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_yogurt_stack_yogurt",
+            "ParentTopicId": "topic_yogurt_stack_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "SuperGutYogurt_ml": 200,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_yogurt_procedure_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Description": "YogurtProcedure",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_yogurt_proc_1",
+            "ParentTopicId": "topic_yogurt_procedure_001",
+            "Type": "ProcedureStep",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Action": "Mix SuperGutYogurt with YogurtStack and eat",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_yogurt_proc_2",
+            "ParentTopicId": "topic_yogurt_procedure_001",
+            "Type": "ProcedureStep",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Action": "Take ProbioticStack with a bit of water",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_pre_morning_supplements_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Description": "PreMorningSupplements",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_pre_morning_glutamine",
+            "ParentTopicId": "topic_pre_morning_supplements_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "L_Glutamine_Powder_g": 5,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_pre_morning_zinc",
+            "ParentTopicId": "topic_pre_morning_supplements_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Name": "Swanson, Zinc Carnosine",
+            "ActiveIngredients": {
+                "Zinc_mg": 8,
+                "L_Carnosine_mg": 29.5
+            },
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_pre_morning_dgl",
+            "ParentTopicId": "topic_pre_morning_supplements_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Name": "Natural Factors, DGL",
+            "ActiveIngredients": {
+                "Deglycyrrhizinated_Licorice_Extract_mg": 400,
+                "Anise_Seed_Powder_mg": 55
+            },
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_morning_supplements_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Description": "MorningSupplements",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_morning_ashwagandha",
+            "ParentTopicId": "topic_morning_supplements_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Name": "NutraBio, KSM-66, Ashwagandha",
+            "ActiveIngredients": {
+                "Ashwagandha_Extract_mg": 600
+            },
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_morning_daily_vits",
+            "ParentTopicId": "topic_morning_supplements_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Name": "NOW Foods, Daily Vits",
+            "ActiveIngredients": {
+                "Type": "Pre-defined Package"
+            },
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_morning_curcumin",
+            "ParentTopicId": "topic_morning_supplements_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Name": "Life Curcumin Phospholipid",
+            "ActiveIngredients": {
+                "Curcumin_mg": 500
+            },
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_morning_d3_k2",
+            "ParentTopicId": "topic_morning_supplements_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Name": "NOW Foods, Mega D3 & MK-7",
+            "ActiveIngredients": {
+                "Vitamin_D3_mcg": 125,
+                "Vitamin_K2_MK7_mcg": 180
+            },
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_evening_supplements_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Description": "EvningSupplments",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_evening_magnesium",
+            "ParentTopicId": "topic_evening_supplements_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Name": "Doctor's Best, High Absorption Magnesium Lysinate Glycinate",
+            "ActiveIngredients": {
+                "Elemental_Magnesium_mg": 300
+            },
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_evening_glycine",
+            "ParentTopicId": "topic_evening_supplements_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Glycine_Powder_g": 3,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_morning_shake_powders_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Description": "MorningShakePowders",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_shake_powders_inulin",
+            "ParentTopicId": "topic_morning_shake_powders_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Inulin_Powder_g": 5,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_shake_powders_glycine",
+            "ParentTopicId": "topic_morning_shake_powders_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Glycine_Powder_g": 10,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_shake_powders_collagen",
+            "ParentTopicId": "topic_morning_shake_powders_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Hydrolyzed_Marine_Collagen_Peptides_g": 5,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_shake_powders_glutamine",
+            "ParentTopicId": "topic_morning_shake_powders_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "L_Glutamine_Powder_g": 5,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_shake_powders_creatine",
+            "ParentTopicId": "topic_morning_shake_powders_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Creatine_Monohydrate_g": 5,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_morning_shake_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Description": "MorningShake",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_shake_avocado",
+            "ParentTopicId": "topic_morning_shake_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Avocado_g": 250,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_shake_banana",
+            "ParentTopicId": "topic_morning_shake_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Banana_g": 200,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_shake_water",
+            "ParentTopicId": "topic_morning_shake_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Water_ml": 200,
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_shake_powders_ref",
+            "ParentTopicId": "topic_morning_shake_001",
+            "Type": "ContentItem",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Reference": "MorningShakePowders",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_morning_shake_procedure_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Description": "MorningShakeProcedure",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_shake_proc_1",
+            "ParentTopicId": "topic_morning_shake_procedure_001",
+            "Type": "ProcedureStep",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:15:39",
+            "Action": "Drink the shake together with the MorningSupplements",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_daily_routine_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-11T19:07:14",
+            "Description": "DailtRoutine",
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_routine_step1",
+            "ParentTopicId": "topic_daily_routine_001",
+            "Type": "RoutineStep",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:07:14",
+            "StepName": "Step1",
+            "Actions": [
+                "06:00 wake up",
+                "Check smart clock for stress levels",
+                "Take PreMorningSupplements"
+            ],
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_routine_step2",
+            "ParentTopicId": "topic_daily_routine_001",
+            "Type": "RoutineStep",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:07:14",
+            "StepName": "Step2",
+            "Actions": [
+                "06:15 Yoga session to warm up for physical activity"
+            ],
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_routine_step3",
+            "ParentTopicId": "topic_daily_routine_001",
+            "Type": "RoutineStep",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:07:14",
+            "StepName": "Step3",
+            "Actions": [
+                "07:00 physical activity"
+            ],
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_routine_step4",
+            "ParentTopicId": "topic_daily_routine_001",
+            "Type": "RoutineStep",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:07:14",
+            "StepName": "Step4",
+            "Actions": [
+                "08:45 YogurtProcedure"
+            ],
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_routine_step5",
+            "ParentTopicId": "topic_daily_routine_001",
+            "Type": "RoutineStep",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:07:14",
+            "StepName": "Step5",
+            "Actions": [
+                "10:45 MorningShakeProcedure"
+            ],
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_routine_step6",
+            "ParentTopicId": "topic_daily_routine_001",
+            "Type": "RoutineStep",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:07:14",
+            "StepName": "Step6",
+            "Actions": [
+                "13:00 Lunch"
+            ],
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_routine_step7",
+            "ParentTopicId": "topic_daily_routine_001",
+            "Type": "RoutineStep",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:07:14",
+            "StepName": "Step7",
+            "Actions": [
+                "19:00 EvningSupplments"
+            ],
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_routine_step8",
+            "ParentTopicId": "topic_daily_routine_001",
+            "Type": "RoutineStep",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:07:14",
+            "StepName": "Step8",
+            "Actions": [
+                "20:30 reading book in bed"
+            ],
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "record_routine_step9",
+            "ParentTopicId": "topic_daily_routine_001",
+            "Type": "RoutineStep",
+            "BlockVersion": 1,
+            "LastUpdate": "2026-03-11T19:07:14",
+            "StepName": "Step9",
+            "Actions": [
+                "21:30 take sleeping pill and drink 10ml Gaviscon"
+            ],
+            "active_research_directions": [],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        },
+        {
+            "Id": "topic_test_sync_001",
+            "BlockVersion": 2,
+            "LastUpdate": "2026-03-10T20:50:00",
+            "Description": "נושא מבחן לבדיקת מנגנון עדכון הגדרות",
+            "active_research_directions": [
+                "בדיקת עדכון חלקי - שלב א' עבר בהצלחה",
+                "בדיקת הזרקת דלתא בשיחה קיימת",
+                "ddd"
+            ],
+            "suggested_research_directions": [],
+            "exhausted_research_directions": [
+                "בדיקת התנעה קרה בשיחה חדשה"
+            ],
+            "suggested_actions": [],
+            "accepted_actions": [],
+            "GlobalSyncVersion": 25
+        }
+    ]
+}
