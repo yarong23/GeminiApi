@@ -1,6 +1,6 @@
 {
-  "Version": 33,
-  "LastUpdate": "2026-03-12T18:04:59",
+  "Version": 35,
+  "LastUpdate": "2026-03-12T18:18:15",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -304,11 +304,109 @@
     },
     {
       "Id": "topic_probiotic_stack_001",
-      "BlockVersion": 2,
-      "LastUpdate": "2026-03-11T19:05:00",
+      "BlockVersion": 3,
+      "LastUpdate": "2026-03-12T18:17:31",
       "Description": "ProbioticStack",
       "StartDate": "2026-02-13",
-      "LastUpdateItem": "2026-02-13",
+      "LastUpdateItem": "2026-03-12T18:17:31",
+      "Probiotics": [
+        {
+          "Name": "InnovixLabs, Mood Probiotic",
+          "IsActiveInStack": true,
+          "ActiveIngredients": {
+            "CFU_Billions": 30,
+            "Strains": [
+              "Lactobacillus helveticus Rosell-52ND",
+              "Bifidobacterium longum Rosell-175"
+            ]
+          },
+          "Goal": "Support gut-brain axis, improve mood, and reduce stress/anxiety",
+          "active_research_directions": [],
+          "suggested_research_directions": [],
+          "exhausted_research_directions": [],
+          "suggested_actions": [],
+          "accepted_actions": []
+        },
+        {
+          "Name": "Youtheory, Spore Probiotic \u002B Triphala Blend",
+          "IsActiveInStack": true,
+          "ActiveIngredients": {
+            "CFU_Billions": 6,
+            "TriphalaBlend_mg": 1000,
+            "Strains": [
+              "Bacillus clausii MTCC 5980",
+              "Bacillus subtilis MTCC 5981",
+              "Bacillus coagulans MTCC 5856"
+            ]
+          },
+          "Goal": "Highly survivable strains for digestion support; Triphala for GI tract toning and detoxification",
+          "active_research_directions": [],
+          "suggested_research_directions": [],
+          "exhausted_research_directions": [],
+          "suggested_actions": [],
+          "accepted_actions": []
+        },
+        {
+          "Name": "California Gold Nutrition, LactoBif 100 Probiotics",
+          "IsActiveInStack": false,
+          "ActiveIngredients": {
+            "CFU_Billions": 100,
+            "Strains": [
+              "Lactobacillus acidophilus",
+              "Lactobacillus rhamnosus",
+              "Bifidobacterium lactis",
+              "Bifidobacterium longum",
+              "Bifidobacterium plantarum",
+              "Lactobacillus casei",
+              "Lactobacillus salivarius",
+              "Bifidobacterium breve"
+            ]
+          },
+          "Goal": "Broad-spectrum high-potency support for general microbiome balance, gut health, and immune system",
+          "active_research_directions": [],
+          "suggested_research_directions": [],
+          "exhausted_research_directions": [],
+          "suggested_actions": [],
+          "accepted_actions": []
+        },
+        {
+          "Name": "California Gold Nutrition, Akkermansia \u002B Probiotics GLP-1 Complex",
+          "IsActiveInStack": true,
+          "ActiveIngredients": {
+            "CFU_Billions": 30,
+            "TFU_Billions_Akkermansia": 5,
+            "Strains": [
+              "Bifidobacterium animalis subsp. lactis",
+              "Bifidobacterium adolescentis",
+              "Lacticaseibacillus casei",
+              "Pediococcus acidilactici",
+              "Pasteurized Akkermansia muciniphila"
+            ]
+          },
+          "Goal": "Strengthen gut lining (mucin production), metabolic support, and stimulate GLP-1 for appetite regulation",
+          "active_research_directions": [],
+          "suggested_research_directions": [],
+          "exhausted_research_directions": [],
+          "suggested_actions": [],
+          "accepted_actions": []
+        },
+        {
+          "Name": "Vitamatic, Bifidobacterium Infantis, 60 DRcaps\u00AE Hypromellose Capsules",
+          "IsActiveInStack": true,
+          "ActiveIngredients": {
+            "CFU_Billions": 5,
+            "Strains": [
+              "Bifidobacterium infantis"
+            ]
+          },
+          "Goal": "Support digestion, reduce inflammation, and enhance gut-brain axis",
+          "active_research_directions": [],
+          "suggested_research_directions": [],
+          "exhausted_research_directions": [],
+          "suggested_actions": [],
+          "accepted_actions": []
+        }
+      ],
       "active_research_directions": [
         "Synergy between the different bacterial strains",
         "Optimal administration method to ensure maximum colonization and efficacy",
@@ -318,7 +416,7 @@
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [],
-      "GlobalSyncVersion": 25
+      "GlobalSyncVersion": 35
     },
     {
       "Id": "record_probiotic_innovix",
