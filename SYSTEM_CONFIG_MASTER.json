@@ -1,6 +1,6 @@
 {
-  "Version": 27,
-  "LastUpdate": "2026-03-11T19:55:16",
+  "Version": 33,
+  "LastUpdate": "2026-03-12T18:04:59",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -150,9 +150,68 @@
     },
     {
       "Id": "topic_supergut_recipe_001",
-      "BlockVersion": 9,
-      "LastUpdate": "2026-03-11T19:05:00",
+      "BlockVersion": 8,
+      "LastUpdate": "2026-03-10T20:12:09",
       "Description": "SuperGutYogurtRecipe",
+      "History": [
+        {
+          "Version_1": {
+            "ExecutionDate": "2026-03-03",
+            "StarterType": "SuperGutYogurtRecipeStarter:Generation1",
+            "MicrobeCountInStarter": "Approx. 598.5 Billion CFU",
+            "Ingredients": {
+              "Milk_ml": 2000,
+              "Cream_ml": 1000,
+              "Inulin_g": 6
+            },
+            "IncubationTemperature": 36,
+            "IncubationTime": 36,
+            "CoolDownTime": 24,
+            "Steps": [
+              "Denature milk and cream",
+              "cool down to IncubationTemperature degrees",
+              "mix the inulin, starter and some cold milk",
+              "add the mixture to the insta pot with the rest of the milk and cream",
+              "put a paper towel on top of the insta pot",
+              "incubate for IncubationTime hours",
+              "refrigerate for CoolDownTime hours"
+            ],
+            "EndResult": {
+              "Taste": "Good but slightly sour",
+              "Consistency": "Separated into curds and whey, but significantly less than the previous batch",
+              "Separation": "Separated"
+            }
+          }
+        },
+        {
+          "Version_2": {
+            "ExecutionDate": "2026-03-10",
+            "StarterType": "SuperGutYogurtRecipeStarter:Generation1",
+            "Ingredients": {
+              "Milk_ml": 2000,
+              "Cream_ml": 1000,
+              "Inulin_g": 6
+            },
+            "IncubationTemperature": 36,
+            "IncubationTime": 36,
+            "CoolDownTime": 24,
+            "Steps": [
+              "Denature milk and cream",
+              "cool down to IncubationTemperature degrees",
+              "mix the inulin, starter and some cold milk",
+              "add the mixture to the insta pot with the rest of the milk and cream",
+              "insert a 2-liter bowl into the insta pot to reduce oxygen volume",
+              "put a paper towel on top of the insta pot",
+              "incubate for IncubationTime hours",
+              "refrigerate for CoolDownTime hours"
+            ],
+            "EndResult": {
+              "Consistency": "Separated into curds and whey, no improvement from reduced oxygen",
+              "Separation": "Separated"
+            }
+          }
+        }
+      ],
       "active_research_directions": [
         "Start incubation with less starter",
         "Use baking sode to reduce acidity of end result",
@@ -166,7 +225,7 @@
       "accepted_actions": [
         "Use 20g of Generation 2 curds/foam as the starter for the next execution to slow down acidification"
       ],
-      "GlobalSyncVersion": 25
+      "GlobalSyncVersion": 33
     },
     {
       "Id": "record_supergut_recipe_v1",
@@ -1020,6 +1079,27 @@
       "suggested_actions": [],
       "accepted_actions": [],
       "GlobalSyncVersion": 27
+    },
+    {
+      "Id": "topic_ide_bridge_001",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-03-12T13:27:20",
+      "Description": "Gemini to IDE Direct Bridge",
+      "active_research_directions": [
+        "Establishing generic C# minimal API on port 5001",
+        "Deploying dedicated Chrome Extension for intercepting IDE_WRITE actions"
+      ],
+      "suggested_research_directions": [
+        "Converting IDE Bridge API to a Windows Service",
+        "Adding support for appending to files instead of overwriting"
+      ],
+      "exhausted_research_directions": [],
+      "suggested_actions": [
+        "Initialize empty C# Web API project and run it on port 5001",
+        "Load the new unpacked extension into Chrome"
+      ],
+      "accepted_actions": [],
+      "GlobalSyncVersion": 29
     }
   ]
 }
