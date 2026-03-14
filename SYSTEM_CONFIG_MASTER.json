@@ -1,6 +1,6 @@
 {
-  "Version": 40,
-  "LastUpdate": "2026-03-13T11:47:58",
+  "Version": 51,
+  "LastUpdate": "2026-03-14T20:03:05",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -150,8 +150,8 @@
     },
     {
       "Id": "topic_supergut_recipe_001",
-      "BlockVersion": 8,
-      "LastUpdate": "2026-03-10T20:12:09",
+      "BlockVersion": 6,
+      "LastUpdate": "2026-03-10T20:01:44",
       "Description": "SuperGutYogurtRecipe",
       "History": [
         {
@@ -222,10 +222,8 @@
         "Incubate withou oxygen"
       ],
       "suggested_actions": [],
-      "accepted_actions": [
-        "Use 20g of Generation 2 curds/foam as the starter for the next execution to slow down acidification"
-      ],
-      "GlobalSyncVersion": 33
+      "accepted_actions": [],
+      "GlobalSyncVersion": 49
     },
     {
       "Id": "record_supergut_recipe_v1",
@@ -304,11 +302,11 @@
     },
     {
       "Id": "topic_probiotic_stack_001",
-      "BlockVersion": 3,
-      "LastUpdate": "2026-03-12T18:17:31",
+      "BlockVersion": 5,
+      "LastUpdate": "2026-03-14T20:02:14",
       "Description": "ProbioticStack",
       "StartDate": "2026-02-13",
-      "LastUpdateItem": "2026-03-12T18:17:31",
+      "LastUpdateItem": "2026-03-14T20:02:14",
       "Probiotics": [
         {
           "Name": "InnovixLabs, Mood Probiotic",
@@ -409,14 +407,20 @@
       ],
       "active_research_directions": [
         "Synergy between the different bacterial strains",
-        "Optimal administration method to ensure maximum colonization and efficacy",
-        "Evaluating if one of the supplements should be dropped to avoid overloading the microbiome"
+        "Evaluating if one of the supplements should be dropped to avoid overloading the microbiome",
+        "Interaction between probiotic transit time and late-evening antacid administration"
       ],
       "suggested_research_directions": [],
-      "exhausted_research_directions": [],
+      "exhausted_research_directions": [
+        "Optimal administration method to ensure maximum colonization and efficacy",
+        "Evening administration on an empty stomach (fasting state) vs morning fed state"
+      ],
       "suggested_actions": [],
-      "accepted_actions": [],
-      "GlobalSyncVersion": 35
+      "accepted_actions": [
+        "Split probiotic stack: Mood Probiotic and Spore Probiotic taken with Yogurt at 08:45 (fed state).",
+        "Split probiotic stack: B. Infantis (DRcaps) and Akkermansia taken at 19:00 (fasted state/empty stomach)."
+      ],
+      "GlobalSyncVersion": 51
     },
     {
       "Id": "record_probiotic_innovix",
@@ -1201,15 +1205,14 @@
     },
     {
       "Id": "topic_system_directives_001",
-      "BlockVersion": 3,
-      "LastUpdate": "2026-03-13T11:47:20",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-03-13T10:40:39",
       "Description": "System Directives and Behavioral Rules",
       "Directives": [
         "You are managing the attached JSON state. This is the absolute baseline.",
         "When you suggest a new action or research direction, you MUST proactively generate a Delta Update JSON block.",
-        "CRITICAL DELTA PROTOCOL: REGARDLESS of the tool being used (including Deep Research or external plugins), you MUST print the exact string [SYNC_BLOCK_START] on its own line immediately before ANY JSON code block. NEVER output a JSON update without this visual trigger. Increment the BlockVersion and update the LastUpdate timestamp (ISO format).",
+        "DELTA UPDATE PROTOCOL: Never print the full JSON. Print ONLY the specific block being modified. Before the block, you MUST print the exact string [SYNC_BLOCK_START] on its own line. Increment the BlockVersion and update the LastUpdate timestamp (ISO format).",
         "VERSION CONTROL PROTOCOL: When a block is updated, set its \u0027GlobalSyncVersion\u0027 to match the new overarching global \u0027Version\u0027. Do not arbitrarily increment \u0027GlobalSyncVersion\u0027; it must exactly reflect the global Version at the time of the block\u0027s modification.",
-        "EXECUTION TRIGGER: When the user asks to \u0027change the settings file\u0027 (\u05DC\u05E9\u05E0\u05D5\u05EA \u05DE\u05E9\u05D4\u05D5 \u05D1\u05E7\u05D5\u05D1\u05E5 \u05D4\u05D4\u05D2\u05D3\u05E8\u05D5\u05EA), this is a strict command to execute a state mutation. You must immediately identify the relevant blocks, apply the requested changes, and output the updated Delta JSON blocks. Do not merely acknowledge the request in text.",
         "Tone: Smart friend, professional, precise. Never conclude topics; learning is infinite. Prefer substantive debate over polite agreement.",
         "Always distinguish between known scientific facts (cite sources) and AI deductions (explain logic).",
         "Perform comparative analysis between active research and history before updating protocols."
@@ -1219,7 +1222,7 @@
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [],
-      "GlobalSyncVersion": 40
+      "GlobalSyncVersion": 43
     }
   ]
 }
