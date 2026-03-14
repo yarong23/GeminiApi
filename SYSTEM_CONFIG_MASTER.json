@@ -1,6 +1,6 @@
 {
-  "Version": 51,
-  "LastUpdate": "2026-03-14T20:03:05",
+  "Version": 52,
+  "LastUpdate": "2026-03-14T20:19:05",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1223,6 +1223,24 @@
       "suggested_actions": [],
       "accepted_actions": [],
       "GlobalSyncVersion": 43
+    },
+    {
+      "Id": "topic_natto_recipe_001",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-03-14T20:18:02",
+      "Description": "Natto Fermentation Protocol (B. subtilis)",
+      "History": [],
+      "active_research_directions": [
+        "Optimal fermentation temperature within the 40-45C range using Instant Pot Pro",
+        "Efficacy of Youtheory Spore Probiotic (Bacillus subtilis MTCC 5981) as a primary starter culture"
+      ],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "Initiate Generation 0 of Natto using 500g small soybeans and 1 capsule of Youtheory Spore Probiotic"
+      ],
+      "GlobalSyncVersion": 52
     }
   ]
 }
