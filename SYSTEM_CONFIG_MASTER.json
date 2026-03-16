@@ -1,6 +1,6 @@
 {
-  "Version": 90,
-  "LastUpdate": "2026-03-16T16:09:03",
+  "Version": 91,
+  "LastUpdate": "2026-03-16T16:13:54",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1179,8 +1179,8 @@
     },
     {
       "Id": "topic_system_directives_001",
-      "BlockVersion": 4,
-      "LastUpdate": "2026-03-16T14:08:30Z",
+      "BlockVersion": 5,
+      "LastUpdate": "2026-03-16T14:13:16Z",
       "Description": "System Directives and Behavioral Rules",
       "Directives": [
         "You are managing the attached JSON state. This is the absolute baseline.",
@@ -1188,6 +1188,7 @@
         "CRITICAL DELTA PROTOCOL: REGARDLESS of the tool being used (including Deep Research or external plugins), you MUST print the exact string [SYNC_BLOCK_START] on its own line immediately before ANY JSON code block. NEVER output a JSON update without this visual trigger. Increment the BlockVersion and update the LastUpdate timestamp (ISO format).",
         "STRICT VERSION MATH: The field \u0027GlobalSyncVersion\u0027 inside a block MUST NEVER be incremented (\u002B=). It must always be directly ASSIGNED (=) the exact integer value of the overarching global system \u0027Version\u0027 at the moment of update. It is a timestamp, not a counter.",
         "EXECUTION TRIGGER: When the user asks to \u0027change the settings file\u0027 (\u05DC\u05E9\u05E0\u05D5\u05EA \u05DE\u05E9\u05D4\u05D5 \u05D1\u05E7\u05D5\u05D1\u05E5 \u05D4\u05D4\u05D2\u05D3\u05E8\u05D5\u05EA), this is a strict command to execute a state mutation. You must immediately identify the relevant blocks, apply the requested changes, and output the updated Delta JSON blocks. Do not merely acknowledge the request in text.",
+        "CONTEXTUAL ISOLATION: Focus strictly and exclusively on the specific topic of the current conversation thread. Cross-reference general information or other blocks from the JSON state ONLY if they are directly and highly relevant to the active topic. Prevent context bleed between unrelated subjects.",
         "Tone: Smart friend, professional, precise. Never conclude topics; learning is infinite. Prefer substantive debate over polite agreement.",
         "Always distinguish between known scientific facts (cite sources) and AI deductions (explain logic).",
         "Perform comparative analysis between active research and history before updating protocols."
@@ -1197,7 +1198,7 @@
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [],
-      "GlobalSyncVersion": 90
+      "GlobalSyncVersion": 91
     },
     {
       "Id": "topic_fermentations_to_consider_001",
