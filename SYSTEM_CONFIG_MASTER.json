@@ -1,6 +1,6 @@
 {
-  "Version": 75,
-  "LastUpdate": "2026-03-16T12:24:54",
+  "Version": 90,
+  "LastUpdate": "2026-03-16T16:09:03",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -158,8 +158,8 @@
     },
     {
       "Id": "topic_supergut_recipe_001",
-      "BlockVersion": 10,
-      "LastUpdate": "2026-03-16T12:24:05",
+      "BlockVersion": 11,
+      "LastUpdate": "2026-03-16T12:31:00",
       "Description": "SuperGutYogurtRecipe",
       "active_research_directions": [
         "Start incubation with less starter",
@@ -172,8 +172,10 @@
         "Incubate withou oxygen"
       ],
       "suggested_actions": [],
-      "accepted_actions": [],
-      "GlobalSyncVersion": 75
+      "accepted_actions": [
+        "Execute Version 4 using 10g of starter to further flatten the pH curve and stabilize emulsion"
+      ],
+      "GlobalSyncVersion": 85
     },
     {
       "Id": "record_supergut_recipe_v1",
@@ -252,11 +254,11 @@
     },
     {
       "Id": "topic_probiotic_stack_001",
-      "BlockVersion": 5,
-      "LastUpdate": "2026-03-14T20:02:14",
+      "BlockVersion": 4,
+      "LastUpdate": "2026-03-14T19:47:00",
       "Description": "ProbioticStack",
       "StartDate": "2026-02-13",
-      "LastUpdateItem": "2026-03-14T20:02:14",
+      "LastUpdateItem": "2026-03-14T19:47:00",
       "Probiotics": [
         {
           "Name": "InnovixLabs, Mood Probiotic",
@@ -357,20 +359,16 @@
       ],
       "active_research_directions": [
         "Synergy between the different bacterial strains",
+        "Optimal administration method to ensure maximum colonization and efficacy",
         "Evaluating if one of the supplements should be dropped to avoid overloading the microbiome",
+        "Evening administration on an empty stomach (fasting state) vs morning fed state",
         "Interaction between probiotic transit time and late-evening antacid administration"
       ],
       "suggested_research_directions": [],
-      "exhausted_research_directions": [
-        "Optimal administration method to ensure maximum colonization and efficacy",
-        "Evening administration on an empty stomach (fasting state) vs morning fed state"
-      ],
+      "exhausted_research_directions": [],
       "suggested_actions": [],
-      "accepted_actions": [
-        "Split probiotic stack: Mood Probiotic and Spore Probiotic taken with Yogurt at 08:45 (fed state).",
-        "Split probiotic stack: B. Infantis (DRcaps) and Akkermansia taken at 19:00 (fasted state/empty stomach)."
-      ],
-      "GlobalSyncVersion": 70
+      "accepted_actions": [],
+      "GlobalSyncVersion": 78
     },
     {
       "Id": "record_probiotic_innovix",
@@ -1181,14 +1179,15 @@
     },
     {
       "Id": "topic_system_directives_001",
-      "BlockVersion": 1,
-      "LastUpdate": "2026-03-13T10:40:39",
+      "BlockVersion": 4,
+      "LastUpdate": "2026-03-16T14:08:30Z",
       "Description": "System Directives and Behavioral Rules",
       "Directives": [
         "You are managing the attached JSON state. This is the absolute baseline.",
         "When you suggest a new action or research direction, you MUST proactively generate a Delta Update JSON block.",
-        "DELTA UPDATE PROTOCOL: Never print the full JSON. Print ONLY the specific block being modified. Before the block, you MUST print the exact string [SYNC_BLOCK_START] on its own line. Increment the BlockVersion and update the LastUpdate timestamp (ISO format).",
-        "VERSION CONTROL PROTOCOL: When a block is updated, set its \u0027GlobalSyncVersion\u0027 to match the new overarching global \u0027Version\u0027. Do not arbitrarily increment \u0027GlobalSyncVersion\u0027; it must exactly reflect the global Version at the time of the block\u0027s modification.",
+        "CRITICAL DELTA PROTOCOL: REGARDLESS of the tool being used (including Deep Research or external plugins), you MUST print the exact string [SYNC_BLOCK_START] on its own line immediately before ANY JSON code block. NEVER output a JSON update without this visual trigger. Increment the BlockVersion and update the LastUpdate timestamp (ISO format).",
+        "STRICT VERSION MATH: The field \u0027GlobalSyncVersion\u0027 inside a block MUST NEVER be incremented (\u002B=). It must always be directly ASSIGNED (=) the exact integer value of the overarching global system \u0027Version\u0027 at the moment of update. It is a timestamp, not a counter.",
+        "EXECUTION TRIGGER: When the user asks to \u0027change the settings file\u0027 (\u05DC\u05E9\u05E0\u05D5\u05EA \u05DE\u05E9\u05D4\u05D5 \u05D1\u05E7\u05D5\u05D1\u05E5 \u05D4\u05D4\u05D2\u05D3\u05E8\u05D5\u05EA), this is a strict command to execute a state mutation. You must immediately identify the relevant blocks, apply the requested changes, and output the updated Delta JSON blocks. Do not merely acknowledge the request in text.",
         "Tone: Smart friend, professional, precise. Never conclude topics; learning is infinite. Prefer substantive debate over polite agreement.",
         "Always distinguish between known scientific facts (cite sources) and AI deductions (explain logic).",
         "Perform comparative analysis between active research and history before updating protocols."
@@ -1198,7 +1197,7 @@
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [],
-      "GlobalSyncVersion": 43
+      "GlobalSyncVersion": 90
     },
     {
       "Id": "topic_fermentations_to_consider_001",
@@ -1257,7 +1256,7 @@
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [],
-      "GlobalSyncVersion": 72
+      "GlobalSyncVersion": 80
     },
     {
       "Id": "topic_wearable_hardware_001",
@@ -1286,27 +1285,29 @@
     },
     {
       "Id": "topic_audio_hardware_001",
-      "BlockVersion": 1,
-      "LastUpdate": "2026-03-16T09:46:19Z",
+      "BlockVersion": 2,
+      "LastUpdate": "2026-03-16T14:02:22Z",
       "Description": "Audio Hardware for Phone-Free Workouts",
       "active_research_directions": [
-        "Bluetooth 5.4 energy efficiency profiling during Watch 7 pairing",
-        "Configuring Smart Ambient mode for outdoor interval runs"
+        "Executing dual-pairing sequence (App calibration via phone -\u003E Final pairing to Watch 7)",
+        "Configuring Smart Ambient sensitivity and Equalizer settings in-app",
+        "Mapping touch controls (ANC/Ambient toggling, track skip, call answering)"
       ],
       "suggested_research_directions": [
-        "Optimizing case charging schedule to prevent battery anxiety"
+        "Battery optimization strategy for dual connection (Watch 7 \u0026 JBL Peak 4)"
       ],
       "exhausted_research_directions": [
-        "Evaluating non-ear-hook wireless earbuds"
+        "JBL Endurance physical power mechanism (PowerHook)"
       ],
       "suggested_actions": [
-        "Purchase JBL Endurance Peak 4 ANC",
-        "Configure Bluetooth protocol on Watch 7 for optimal power draw"
+        "Complete initial App configuration on smartphone",
+        "Pair directly to Watch 7 for workout readiness"
       ],
       "accepted_actions": [
-        "Selection of JBL Endurance Peak 4 ANC as the primary audio hardware for workouts"
+        "Received JBL Endurance Peak 4 ANC hardware",
+        "Initiated dual-pairing protocol for ANC configuration"
       ],
-      "GlobalSyncVersion": 63
+      "GlobalSyncVersion": 86
     },
     {
       "Id": "record_shake_powders_betaglucan",
@@ -1335,7 +1336,7 @@
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [],
-      "GlobalSyncVersion": 73
+      "GlobalSyncVersion": 81
     },
     {
       "Id": "topic_supergut_recipe_exec_003",
@@ -1368,7 +1369,7 @@
         "Consistency": "Hard layer on top (Fat Plug), separated but half the amount of whey compared to previous",
         "Separation": "Partial separation"
       },
-      "GlobalSyncVersion": 74
+      "GlobalSyncVersion": 83
     }
   ]
 }
