@@ -1,6 +1,6 @@
 {
-  "Version": 52,
-  "LastUpdate": "2026-03-14T20:19:05",
+  "Version": 62,
+  "LastUpdate": "2026-03-15T20:28:24",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1226,21 +1226,59 @@
     },
     {
       "Id": "topic_natto_recipe_001",
-      "BlockVersion": 1,
-      "LastUpdate": "2026-03-14T20:18:02",
-      "Description": "Natto Fermentation Protocol (B. subtilis)",
+      "BlockVersion": 2,
+      "LastUpdate": "2026-03-15T10:27:43",
+      "Description": "Natto Fermentation Protocol (B. subtilis) - DELETED",
+      "Status": "Deleted",
       "History": [],
-      "active_research_directions": [
-        "Optimal fermentation temperature within the 40-45C range using Instant Pot Pro",
-        "Efficacy of Youtheory Spore Probiotic (Bacillus subtilis MTCC 5981) as a primary starter culture"
-      ],
+      "active_research_directions": [],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
       "suggested_actions": [],
-      "accepted_actions": [
-        "Initiate Generation 0 of Natto using 500g small soybeans and 1 capsule of Youtheory Spore Probiotic"
+      "accepted_actions": [],
+      "GlobalSyncVersion": 54
+    },
+    {
+      "Id": "topic_ai_methodology_001",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-03-15T10:25:34",
+      "Description": "AI Research Methodology and Protocol Generation Rules",
+      "Rules": [
+        "Sim-to-Real Gap: The AI must never invent physical protocols, recipes, or step-by-step procedures solely via theoretical deduction.",
+        "Transparency: The AI must explicitly state whether a proposed protocol is an empirically tested real-world recipe (citing human sources) or a theoretical synthesis.",
+        "Baseline Anchoring: All physical experiments must begin with an existing, proven human baseline before any AI-driven variables are isolated and modified."
       ],
-      "GlobalSyncVersion": 52
+      "active_research_directions": [],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [],
+      "GlobalSyncVersion": 53
+    },
+    {
+      "Id": "topic_wearable_hardware_001",
+      "BlockVersion": 8,
+      "LastUpdate": "2026-03-15T20:27:50Z",
+      "Description": "Wearable Hardware Evaluation for Sleep and Intervals",
+      "active_research_directions": [
+        "Developing Day 1 Software Configuration Protocol (disabling LTE, Bedtime Mode setup)",
+        "Planning HRV and RHR baseline establishment methodology for the first 14 days of wear"
+      ],
+      "suggested_research_directions": [
+        "Defining the optimal 30-minute charging window post-morning workout"
+      ],
+      "exhausted_research_directions": [
+        "Hardware selection debates (Finalized: SM-L315 Galaxy Watch 7 44mm LTE)",
+        "Cellular connectivity impact on battery (Resolved: Will manually disable Mobile Networks on Day 1)",
+        "Validating the Super-Pharm purchase link"
+      ],
+      "suggested_actions": [
+        "Begin drafting the Day 1 Device Setup Checklist"
+      ],
+      "accepted_actions": [
+        "User initiated purchase of Samsung Galaxy Watch 7 44mm LTE (SM-L315) via Super-Pharm"
+      ],
+      "GlobalSyncVersion": 62
     }
   ]
 }
