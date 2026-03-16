@@ -1,6 +1,6 @@
 {
-  "Version": 73,
-  "LastUpdate": "2026-03-16T12:13:35",
+  "Version": 75,
+  "LastUpdate": "2026-03-16T12:24:54",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -158,17 +158,14 @@
     },
     {
       "Id": "topic_supergut_recipe_001",
-      "BlockVersion": 6,
-      "LastUpdate": "2026-03-10T20:01:44",
+      "BlockVersion": 10,
+      "LastUpdate": "2026-03-16T12:24:05",
       "Description": "SuperGutYogurtRecipe",
-      "History": [
-        "record_supergut_recipe_v1",
-        "record_supergut_recipe_v2"
-      ],
       "active_research_directions": [
         "Start incubation with less starter",
         "Use baking sode to reduce acidity of end result",
-        "Change Inulin amount"
+        "Change Inulin amount",
+        "Reduce incubation time"
       ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [
@@ -176,7 +173,7 @@
       ],
       "suggested_actions": [],
       "accepted_actions": [],
-      "GlobalSyncVersion": 64
+      "GlobalSyncVersion": 75
     },
     {
       "Id": "record_supergut_recipe_v1",
@@ -1339,6 +1336,39 @@
       "suggested_actions": [],
       "accepted_actions": [],
       "GlobalSyncVersion": 73
+    },
+    {
+      "Id": "topic_supergut_recipe_exec_003",
+      "ParentId": "topic_supergut_recipe_001",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-03-16T12:24:05",
+      "Description": "SuperGutYogurtRecipe Execution - Version 3",
+      "ExecutionDate": "2026-03-16",
+      "StarterType": "SuperGutYogurtRecipeStarter:Generation2",
+      "Ingredients": {
+        "Milk_ml": 2000,
+        "Cream_ml": 1000,
+        "Inulin_g": 6,
+        "Starter_g": 20
+      },
+      "IncubationTemperature": 36,
+      "IncubationTime": 36,
+      "CoolDownTime": 24,
+      "Steps": [
+        "Denature milk and cream",
+        "cool down to IncubationTemperature degrees",
+        "mix the inulin, 20g starter and some cold milk",
+        "add the mixture to the insta pot with the rest of the milk and cream",
+        "put a paper towel on top of the insta pot",
+        "incubate for IncubationTime hours",
+        "refrigerate for CoolDownTime hours"
+      ],
+      "EndResult": {
+        "Taste": "Better, slightly less sour",
+        "Consistency": "Hard layer on top (Fat Plug), separated but half the amount of whey compared to previous",
+        "Separation": "Partial separation"
+      },
+      "GlobalSyncVersion": 74
     }
   ]
 }
