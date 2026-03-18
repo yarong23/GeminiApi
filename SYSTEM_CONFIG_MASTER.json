@@ -1,6 +1,6 @@
 {
-  "Version": 174,
-  "LastUpdate": "2026-03-18T13:00:29",
+  "Version": 214,
+  "LastUpdate": "2026-03-18T18:13:39",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1179,26 +1179,25 @@
     },
     {
       "Id": "topic_system_directives_001",
-      "BlockVersion": 6,
-      "LastUpdate": "2026-03-17T08:05:00Z",
+      "BlockVersion": 4,
+      "LastUpdate": "2026-03-16T14:08:30Z",
       "Description": "System Directives and Behavioral Rules",
       "Directives": [
         "You are managing the attached JSON state. This is the absolute baseline.",
         "When you suggest a new action or research direction, you MUST proactively generate a Delta Update JSON block.",
-        "CRITICAL DELTA PROTOCOL: REGARDLESS of the tool being used, you MUST print the exact string [SYNC_BLOCK_START] on its own line immediately before ANY JSON code block.",
-        "STRICT VERSION MATH: GlobalSyncVersion MUST ALWAYS = overarching global system Version.",
-        "EXECUTION TRIGGER: When the user asks to change the settings file, execute a state mutation immediately.",
-        "CONTEXTUAL ISOLATION: Focus strictly on the specific topic of the current conversation thread.",
-        "ARCHITECT PERSONA: You are a Senior Software Architect. You are the opposing force to the developer. Prioritize macro-architecture, scalability, and long-term maintenance over immediate execution speed.",
-        "CRITICAL ANALYSIS: NEVER present a single solution immediately. ALWAYS present a comparative matrix of viable options detailing Pros, Cons, Community Size, and Trade-offs before making a decision.",
-        "DEBATE: Challenge the user\u0027s assumptions. Force thorough reviews of the consequences of any architectural change."
+        "CRITICAL DELTA PROTOCOL: REGARDLESS of the tool being used (including Deep Research or external plugins), you MUST print the exact string [SYNC_BLOCK_START] on its own line immediately before ANY JSON code block. NEVER output a JSON update without this visual trigger. Increment the BlockVersion and update the LastUpdate timestamp (ISO format).",
+        "STRICT VERSION MATH: The field \u0027GlobalSyncVersion\u0027 inside a block MUST NEVER be incremented (\u002B=). It must always be directly ASSIGNED (=) the exact integer value of the overarching global system \u0027Version\u0027 at the moment of update. It is a timestamp, not a counter.",
+        "EXECUTION TRIGGER: When the user asks to \u0027change the settings file\u0027 (\u05DC\u05E9\u05E0\u05D5\u05EA \u05DE\u05E9\u05D4\u05D5 \u05D1\u05E7\u05D5\u05D1\u05E5 \u05D4\u05D4\u05D2\u05D3\u05E8\u05D5\u05EA), this is a strict command to execute a state mutation. You must immediately identify the relevant blocks, apply the requested changes, and output the updated Delta JSON blocks. Do not merely acknowledge the request in text.",
+        "Tone: Smart friend, professional, precise. Never conclude topics; learning is infinite. Prefer substantive debate over polite agreement.",
+        "Always distinguish between known scientific facts (cite sources) and AI deductions (explain logic).",
+        "Perform comparative analysis between active research and history before updating protocols."
       ],
       "active_research_directions": [],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [],
-      "GlobalSyncVersion": 121
+      "GlobalSyncVersion": 202
     },
     {
       "Id": "topic_fermentations_to_consider_001",
@@ -1391,77 +1390,86 @@
       "accepted_actions": [
         "Adopted C# ProcessStartInfo approach for background git execution"
       ],
-      "GlobalSyncVersion": 103
+      "GlobalSyncVersion": 197
     },
     {
       "Id": "topic_dual_agent_architecture_001",
-      "BlockVersion": 11,
-      "LastUpdate": "2026-03-18T12:37:50Z",
-      "Description": "Dual-Agent IDE Integration Paradigm",
-      "WorkflowPipeline": {
-        "Step1_Architect": "AI Architect (Gemini) defines precise task prompt and constraints. User approves.",
-        "Step2_Contract": "Code Agent (Aider) receives prompt, generates ONLY Interfaces and DTOs. STOPS.",
-        "Step3_Review1": "User reviews contracts in Visual Studio. Feedback loop updates constraints if needed.",
-        "Step4_Implementation": "Code Agent writes internal implementation based on approved contracts.",
-        "Step5_Review2": "User reviews final code."
-      },
-      "active_research_directions": [
-        "Drafting the exact prompt/rule in AGENTS.md to force Aider to halt after generating interfaces",
-        "Defining the feedback loop mechanism between User review and the Examples Ledger"
-      ],
-      "suggested_research_directions": [],
-      "exhausted_research_directions": [
-        "Delegating architectural planning to the code agent (Rejected: Architect assumes this role)"
-      ],
-      "suggested_actions": [
-        "Draft the \u0027Halt and Verify\u0027 directive for the AGENTS.md file"
-      ],
-      "accepted_actions": [
-        "Adopt \u0027Architect-Driven Contract-First\u0027 workflow (Gemini -\u003E Prompt -\u003E Aider -\u003E Interfaces -\u003E User -\u003E Aider -\u003E Implementation)",
-        "Adopt AGENTS.md format as the primary contract for AI behavior to ensure cross-agent compatibility and structure."
-      ],
-      "GlobalSyncVersion": 161
-    },
-    {
-      "Id": "topic_code_quality_standards_001",
-      "BlockVersion": 6,
-      "LastUpdate": "2026-03-18T12:48:00Z",
-      "Description": "Coding Standards and SOLID Principles for Local Agent Execution",
-      "AgentContractStructure": {
-        "Format": "AGENTS.md (Universal Standard 2026)",
-        "Status": "Generated via IDE Bridge",
-        "Sections": [
-          "1. Project Context",
-          "2. Workflow Gates (Phase 1 \u0026 Phase 2)",
-          "3. Strict Development Boundaries (Anti-Patterns)",
-          "4. Architectural Standards (SOLID)"
+      "BlockVersion": 13,
+      "LastUpdate": "2026-03-18T18:05:00Z",
+      "Description": "Multi-Agent IDE Integration Paradigm (Split FE/BE)",
+      "Architecture": {
+        "Architect": "Gemini (Web)",
+        "Executors": [
+          {
+            "Role": "Frontend Agent",
+            "Path": "C:\\Layla\\GeminiConfigSync",
+            "Stack": [
+              "JavaScript",
+              "Chrome Extensions V3",
+              "DOM Manipulation"
+            ],
+            "ContractFile": "AGENTS.md"
+          },
+          {
+            "Role": "Backend Agent",
+            "Path": "C:\\Layla\\GeminiConfigApi",
+            "Stack": [
+              "C#",
+              ".NET 8",
+              "ASP.NET Core",
+              "Windows Services"
+            ],
+            "ContractFile": "AGENTS.md"
+          }
         ]
       },
       "active_research_directions": [
-        "Testing the newly generated AGENTS.md contract against a live Aider session to verify Phase 1 halting"
+        "Drafting JavaScript-specific coding standards for the FE agent",
+        "Ensuring the FE agent respects Chrome Extension Manifest V3 security constraints"
       ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [
-        "Successfully formulated the Halt Directives using XML tags.",
-        "Triggered IDE Bridge to write AGENTS.md to the project root."
+        "Finalized FE path: C:\\Layla\\GeminiConfigSync",
+        "Finalized BE path: C:\\Layla\\GeminiConfigApi"
       ],
-      "GlobalSyncVersion": 162
+      "GlobalSyncVersion": 211
+    },
+    {
+      "Id": "topic_code_quality_standards_001",
+      "BlockVersion": 12,
+      "LastUpdate": "2026-03-18T18:15:00Z",
+      "Description": "Coding Standards and SOLID Principles with DDD Enforcement",
+      "Standards": [
+        "SOLID \u0026 DDD: Mandatory layered architecture.",
+        "Domain Layer: Contains Entities, Value Objects, and Domain Logic. Pure C# with no external dependencies.",
+        "Application Layer: Orchestrates tasks, uses Repositories, and handles DTO mapping.",
+        "Infrastructure Layer: Implements File System, Git, and Network communication.",
+        "Method Constraints: MAX 25 logical lines. Logic must be in the Domain.",
+        "Value Objects: Use records for immutable Value Objects to ensure type safety."
+      ],
+      "active_research_directions": [
+        "Defining the Ubiquitous Language for the CodeAgent Domain"
+      ],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "Adopted DDD (Domain-Driven Design) as the primary architectural pattern for the Backend."
+      ],
+      "GlobalSyncVersion": 213
     },
     {
       "Id": "topic_architect_persona_001",
-      "BlockVersion": 11,
-      "LastUpdate": "2026-03-18T13:10:00Z",
+      "BlockVersion": 7,
+      "LastUpdate": "2026-03-18T11:35:00Z",
       "Description": "Comprehensive Definition, Rules, and Sources for the AI System Architect persona",
       "ReferenceSources": [
-        "Anthropic Engineering: Effective context engineering for AI agents (https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)",
-        "LangChain Blog: Context Engineering for Agents (https://blog.langchain.com/context-engineering-for-agents/)",
-        "Medium: System Prompts - The Secret to Making AI Work for Your Business (https://medium.com/@amansatyawani/system-prompts-the-secret-to-making-ai-work-for-your-business-9bbbfcb9c036)",
-        "GitHub (Daniel Podolsky): Production-ready prompt engineering patterns (https://github.com/DanielPodolsky/prompt-engineering-patterns)",
-        "Aider Documentation: Specifying coding conventions (https://aider.chat/docs/usage/conventions.html)",
-        "Reddit: Built an MCP server that gives AI coding assistants engineering standards (https://www.reddit.com/r/ClaudeAI/comments/1rdqovr/built_an_mcp_server_that_gives_ai_coding/)",
-        "Towards Data Science: How Agent Handoffs Work in Multi-Agent Systems (https://towardsdatascience.com/how-agent-handoffs-work-in-multi-agent-systems/)"
+        "Anthropic Engineering: Effective context engineering for AI agents (Context Management \u0026 Role Segregation)",
+        "LangChain Blog: Context Engineering for Agents (Agentic Handoffs)",
+        "Aider Documentation: Specifying coding conventions (Autonomous Agent Constraints)",
+        "Industry Practices: Architecture Decision Records (ADR) and Post-Mortems"
       ],
       "ArchitectRules": {
         "PostureAndInteraction": [
@@ -1477,12 +1485,10 @@
         ],
         "ContextAndState": [
           "Strict Role Segregation: The Architect dictates the \u0027Why\u0027 and \u0027What\u0027. The execution agent (Aider) handles the \u0027How\u0027 (syntax).",
-          "Tool-Agnostic Design: Design around principles and interfaces, not specific libraries.",
-          "Scope Containment (Anti-Scope Creep): Strictly reject requests to bundle multiple unrelated features into a single task. Enforce atomic, single-purpose IDE_TASK payloads."
+          "Tool-Agnostic Design: Design around principles and interfaces, not specific libraries."
         ],
         "HandoffAndFeedback": [
           "Contract-First Design: Define APIs, JSON schemas, and interfaces before writing any logic.",
-          "Destructive Operations Guardrail: Mandate explicit, secondary human confirmation before authorizing any task that deletes data, drops tables, or permanently removes core files.",
           "Review Gates: The AI MUST explicitly pause and wait for human approval before moving to the next implementation step.",
           "Active Post-Mortem: The AI is responsible for actively initiating a feedback loop after task execution to populate the Examples Ledger."
         ]
@@ -1496,33 +1502,26 @@
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [
-        "Restored Architect Persona fully after accidental partial overwrite. Data integrity re-established."
+        "Fully structured the Architect Persona with explicit rules and traceable sources."
       ],
-      "GlobalSyncVersion": 173
+      "GlobalSyncVersion": 185
     },
     {
       "Id": "topic_examples_ledger_001",
-      "BlockVersion": 2,
-      "LastUpdate": "2026-03-18T12:50:00Z",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-03-18T11:15:00Z",
       "Description": "Architecture Decision Records and Few-Shot Learning Examples",
-      "Ledger": [
-        {
-          "Type": "Incident",
-          "Date": "2026-03-18",
-          "Issue": "AI assumed standard JSON payload for IDE_WRITE without knowing the specific IDE Bridge API contract previously defined in another chat.",
-          "Resolution": "Halted execution. Pending exact schema from user. Will update system directives with the correct schema once provided."
-        }
-      ],
+      "Ledger": [],
       "active_research_directions": [
-        "Acquiring exact IDE Bridge communication protocol/schema from the user"
+        "Defining the exact JSON schema for an individual ledger entry (e.g., Incident, Flawed Assumption, Corrective Action, New Rule)"
       ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [
-        "Halt execution when lacking integration documentation."
+        "This block will serve as the primary database for Few-Shot prompting to align AI behavior with past human corrections."
       ],
-      "GlobalSyncVersion": 163
+      "GlobalSyncVersion": 183
     },
     {
       "Id": "topic_state_hydration_001",
@@ -1586,25 +1585,78 @@
     },
     {
       "Id": "topic_ide_bridge_contract_001",
-      "BlockVersion": 2,
-      "LastUpdate": "2026-03-18T13:10:00Z",
-      "Description": "Communication Protocol between Gemini and the C# IdeBridge (Legacy)",
+      "BlockVersion": 5,
+      "LastUpdate": "2026-03-18T13:30:00Z",
+      "Description": "Communication Protocol between Gemini and the C# IdeBridge",
       "Contract": {
-        "CommunicationMethod": "Direct String Broadcast",
+        "CommunicationMethod": "Chrome Extension Interceptor",
         "MandatoryTrigger": "[SYNC_BLOCK_START]",
         "PrimaryAction": "IDE_WRITE",
-        "Syntax": "IDE_WRITE [File_Path] [File_Content]",
-        "ExecutionFlow": "Gemini (Architect) -\u003E Chrome Extension -\u003E C# IdeBridge -\u003E Local File System",
-        "Constraint": "Use this method ONLY for infrastructure files like CONVENTIONS.md or scripts. Do not use for bulk code generation until Aider is integrated."
+        "PayloadSchema": {
+          "Action": "IDE_WRITE",
+          "FilePath": "string (MUST BE ABSOLUTE PATH)",
+          "Content": "string (File body)"
+        }
       },
       "active_research_directions": [],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [
+        "Relative FilePath (Rejected: Bridge requires absolute path to ensure accuracy)"
+      ],
+      "accepted_actions": [
+        "Enforced Absolute Path requirement for all IDE_WRITE operations."
+      ],
+      "GlobalSyncVersion": 204
+    },
+    {
+      "Id": "topic_context_management_001",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-03-18T17:45:00Z",
+      "Description": "Advanced Context Management and Model Context Protocol (MCP) Integration",
+      "active_research_directions": [
+        "Evaluating Model Context Protocol (MCP) implementation for the C# IdeBridge to replace static JSON injection",
+        "Analyzing Aider\u0027s \u0027Repository Map\u0027 efficiency in handling C# dependency graphs"
+      ],
+      "suggested_research_directions": [
+        "Refactoring the IdeBridge to act as an MCP Server"
+      ],
+      "exhausted_research_directions": [],
+      "suggested_actions": [
+        "Continue with current JSON-over-Bridge for CONVENTIONS.md while evaluating MCP for the next architectural phase"
+      ],
+      "accepted_actions": [
+        "Acknowledged MCP as the industry standard for stateful AI interactions."
+      ],
+      "GlobalSyncVersion": 209
+    },
+    {
+      "Id": "topic_domain_model_001",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-03-18T18:20:00Z",
+      "Description": "Ubiquitous Language and Core Domain Models (DDD)",
+      "Entities": [
+        {
+          "Name": "AgentTask",
+          "Type": "AggregateRoot",
+          "Properties": [
+            "Id (ValueObject: TaskId)",
+            "TargetAgent (Enum: Frontend | Backend)",
+            "State (ValueObject: TaskState)",
+            "Instruction (String)",
+            "ContextFiles (List\u003CFilePath\u003E)"
+          ]
+        }
+      ],
+      "active_research_directions": [
+        "Defining the exact state machine transitions for AgentTask (Pending -\u003E Phase1 -\u003E Review -\u003E Phase2 -\u003E Done)"
+      ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [
-        "Formalized the IDE_WRITE protocol in the system state to enable direct file creation via the existing C# Bridge."
+        "Established \u0027AgentTask\u0027 as the primary Aggregate Root for the IDE Bridge domain."
       ],
-      "GlobalSyncVersion": 174
+      "GlobalSyncVersion": 214
     }
   ]
 }
