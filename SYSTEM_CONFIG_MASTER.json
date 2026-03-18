@@ -1,6 +1,6 @@
 {
-  "Version": 128,
-  "LastUpdate": "2026-03-18T11:09:49",
+  "Version": 130,
+  "LastUpdate": "2026-03-18T11:13:46",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1446,27 +1446,42 @@
     },
     {
       "Id": "topic_architect_persona_001",
-      "BlockVersion": 4,
-      "LastUpdate": "2026-03-18T11:09:12Z",
+      "BlockVersion": 5,
+      "LastUpdate": "2026-03-18T11:15:00Z",
       "Description": "Definition and constraints of the AI System Architect persona",
       "active_research_directions": [
-        "Designing a formal \u0027Feedback Gate\u0027 (Retrospective) to be triggered after every Aider execution to evaluate architectural success/failure",
-        "Creating the JSON schema for an \u0027Examples Ledger\u0027 (ADR) to store concrete code examples and AI behavioral corrections (Few-Shot records)"
+        "Deciding between Strict Post-Handoff Trigger vs. Conflict-Driven Trigger for initiating the feedback loop"
       ],
-      "suggested_research_directions": [
-        "Determining how the Architect AI should proactively ask for the Post-Mortem review once the user returns to the chat"
-      ],
+      "suggested_research_directions": [],
       "exhausted_research_directions": [],
       "suggested_actions": [
-        "Draft the initial JSON schema for the \u0027Examples Ledger\u0027 block so it is ready to capture our first real-world case study"
+        "Select the trigger mechanism for the Active Post-Mortem"
       ],
       "accepted_actions": [
         "Adopt \u0027Divergent then Convergent\u0027 workflow: Always start with broad research and raw data presentation before summarizing or concluding",
         "Suspend all code generation and IDE_TASK creation until the Architect persona rules are finalized and embedded in the system directives",
         "Integrate a continuous learning loop: The persona rules must be dynamically updated based on user code-review feedback",
-        "Implement an Examples Ledger to transition abstract rules into concrete, actionable constraints"
+        "Implement an Examples Ledger to transition abstract rules into concrete, actionable constraints",
+        "MANDATE: The AI Architect is strictly responsible for ACTIVELY initiating the Post-Mortem evaluation process and prompting the user for structured feedback."
       ],
-      "GlobalSyncVersion": 128
+      "GlobalSyncVersion": 129
+    },
+    {
+      "Id": "topic_examples_ledger_001",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-03-18T11:15:00Z",
+      "Description": "Architecture Decision Records and Few-Shot Learning Examples",
+      "Ledger": [],
+      "active_research_directions": [
+        "Defining the exact JSON schema for an individual ledger entry (e.g., Incident, Flawed Assumption, Corrective Action, New Rule)"
+      ],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "This block will serve as the primary database for Few-Shot prompting to align AI behavior with past human corrections."
+      ],
+      "GlobalSyncVersion": 130
     }
   ]
 }
