@@ -1,6 +1,6 @@
 {
-  "Version": 215,
-  "LastUpdate": "2026-03-18T18:20:55",
+  "Version": 219,
+  "LastUpdate": "2026-03-18T18:38:14",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1394,8 +1394,8 @@
     },
     {
       "Id": "topic_dual_agent_architecture_001",
-      "BlockVersion": 13,
-      "LastUpdate": "2026-03-18T18:05:00Z",
+      "BlockVersion": 16,
+      "LastUpdate": "2026-03-18T18:48:00Z",
       "Description": "Multi-Agent IDE Integration Paradigm (Split FE/BE)",
       "Architecture": {
         "Architect": "Gemini (Web)",
@@ -1405,8 +1405,7 @@
             "Path": "C:\\Layla\\GeminiConfigSync",
             "Stack": [
               "JavaScript",
-              "Chrome Extensions V3",
-              "DOM Manipulation"
+              "Chrome Extensions V3"
             ],
             "ContractFile": "AGENTS.md"
           },
@@ -1416,25 +1415,29 @@
             "Stack": [
               "C#",
               ".NET 8",
-              "ASP.NET Core",
               "Windows Services"
             ],
             "ContractFile": "AGENTS.md"
           }
         ]
       },
-      "active_research_directions": [
-        "Drafting JavaScript-specific coding standards for the FE agent",
-        "Ensuring the FE agent respects Chrome Extension Manifest V3 security constraints"
-      ],
+      "CrossAgentSync": {
+        "Method": "Server-Sent Events (SSE)",
+        "TriggerState": "AwaitingReview OR Failed",
+        "Action": "FE Chrome Extension connects via EventSource -\u003E BE pushes state changes -\u003E FE injects into Gemini Chat",
+        "SafetyConstraint": "Extension MUST verify it injects the payload only once per TaskVersion to prevent infinite loop injections."
+      },
+      "active_research_directions": [],
       "suggested_research_directions": [],
-      "exhausted_research_directions": [],
+      "exhausted_research_directions": [
+        "Long Polling (Rejected: Inefficient for localhost, blocks threads)",
+        "SignalR/WebSockets (Rejected: Overkill for unidirectional status updates)"
+      ],
       "suggested_actions": [],
       "accepted_actions": [
-        "Finalized FE path: C:\\Layla\\GeminiConfigSync",
-        "Finalized BE path: C:\\Layla\\GeminiConfigApi"
+        "Adopted SSE (Server-Sent Events) for cross-agent synchronization."
       ],
-      "GlobalSyncVersion": 211
+      "GlobalSyncVersion": 219
     },
     {
       "Id": "topic_code_quality_standards_001",
@@ -1664,6 +1667,32 @@
         "Selected JSON for immediate persistence with a defined migration path to SQL."
       ],
       "GlobalSyncVersion": 215
+    },
+    {
+      "Id": "topic_infrastructure_execution_001",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-03-18T18:40:00Z",
+      "Description": "Infrastructure Layer: Agent Execution Service",
+      "Contracts": [
+        "IAgentExecutionService: Orchestrates the CLI process for the local agent.",
+        "ExecutionResult: Value Object containing Success status, ExitCode, StdOut, and StdErr."
+      ],
+      "Constraints": [
+        "Process Isolation: The CLI process must be completely isolated. A crash in Aider must not crash the Bridge.",
+        "Timeouts: Strict timeout policies must be enforced (e.g., passing a CancellationToken to the execution service) to prevent zombie processes.",
+        "Stream Interception: Must capture both stdout and stderr asynchronously using events (OutputDataReceived/ErrorDataReceived) to prevent buffer deadlocks."
+      ],
+      "active_research_directions": [
+        "Validating PATH environment variables when spawning processes from a Windows Service context"
+      ],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "Adopted asynchronous Stream Interception for CLI process management.",
+        "Mandated strict Timeout and Cancellation Token propagation for all external processes."
+      ],
+      "GlobalSyncVersion": 217
     }
   ]
 }
