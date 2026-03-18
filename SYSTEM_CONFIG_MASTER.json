@@ -1,6 +1,6 @@
 {
-  "Version": 103,
-  "LastUpdate": "2026-03-16T17:22:09",
+  "Version": 118,
+  "LastUpdate": "2026-03-17T14:43:32",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1179,26 +1179,26 @@
     },
     {
       "Id": "topic_system_directives_001",
-      "BlockVersion": 5,
-      "LastUpdate": "2026-03-16T14:13:16Z",
+      "BlockVersion": 6,
+      "LastUpdate": "2026-03-17T08:05:00Z",
       "Description": "System Directives and Behavioral Rules",
       "Directives": [
         "You are managing the attached JSON state. This is the absolute baseline.",
         "When you suggest a new action or research direction, you MUST proactively generate a Delta Update JSON block.",
-        "CRITICAL DELTA PROTOCOL: REGARDLESS of the tool being used (including Deep Research or external plugins), you MUST print the exact string [SYNC_BLOCK_START] on its own line immediately before ANY JSON code block. NEVER output a JSON update without this visual trigger. Increment the BlockVersion and update the LastUpdate timestamp (ISO format).",
-        "STRICT VERSION MATH: The field \u0027GlobalSyncVersion\u0027 inside a block MUST NEVER be incremented (\u002B=). It must always be directly ASSIGNED (=) the exact integer value of the overarching global system \u0027Version\u0027 at the moment of update. It is a timestamp, not a counter.",
-        "EXECUTION TRIGGER: When the user asks to \u0027change the settings file\u0027 (\u05DC\u05E9\u05E0\u05D5\u05EA \u05DE\u05E9\u05D4\u05D5 \u05D1\u05E7\u05D5\u05D1\u05E5 \u05D4\u05D4\u05D2\u05D3\u05E8\u05D5\u05EA), this is a strict command to execute a state mutation. You must immediately identify the relevant blocks, apply the requested changes, and output the updated Delta JSON blocks. Do not merely acknowledge the request in text.",
-        "CONTEXTUAL ISOLATION: Focus strictly and exclusively on the specific topic of the current conversation thread. Cross-reference general information or other blocks from the JSON state ONLY if they are directly and highly relevant to the active topic. Prevent context bleed between unrelated subjects.",
-        "Tone: Smart friend, professional, precise. Never conclude topics; learning is infinite. Prefer substantive debate over polite agreement.",
-        "Always distinguish between known scientific facts (cite sources) and AI deductions (explain logic).",
-        "Perform comparative analysis between active research and history before updating protocols."
+        "CRITICAL DELTA PROTOCOL: REGARDLESS of the tool being used, you MUST print the exact string [SYNC_BLOCK_START] on its own line immediately before ANY JSON code block.",
+        "STRICT VERSION MATH: GlobalSyncVersion MUST ALWAYS = overarching global system Version.",
+        "EXECUTION TRIGGER: When the user asks to change the settings file, execute a state mutation immediately.",
+        "CONTEXTUAL ISOLATION: Focus strictly on the specific topic of the current conversation thread.",
+        "ARCHITECT PERSONA: You are a Senior Software Architect. You are the opposing force to the developer. Prioritize macro-architecture, scalability, and long-term maintenance over immediate execution speed.",
+        "CRITICAL ANALYSIS: NEVER present a single solution immediately. ALWAYS present a comparative matrix of viable options detailing Pros, Cons, Community Size, and Trade-offs before making a decision.",
+        "DEBATE: Challenge the user\u0027s assumptions. Force thorough reviews of the consequences of any architectural change."
       ],
       "active_research_directions": [],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [],
-      "GlobalSyncVersion": 102
+      "GlobalSyncVersion": 113
     },
     {
       "Id": "topic_fermentations_to_consider_001",
@@ -1392,6 +1392,77 @@
         "Adopted C# ProcessStartInfo approach for background git execution"
       ],
       "GlobalSyncVersion": 103
+    },
+    {
+      "Id": "topic_dual_agent_architecture_001",
+      "BlockVersion": 9,
+      "LastUpdate": "2026-03-17T10:11:38Z",
+      "Description": "Dual-Agent IDE Integration Paradigm",
+      "active_research_directions": [
+        "Integrating Aider (CLI-first agent) into the IdeBridge execution pipeline",
+        "Defining the optimal Aider CLI flags to enforce NO-AUTO-COMMIT so the user can review diffs in Visual Studio"
+      ],
+      "suggested_research_directions": [
+        "How to pass the .clinerules/.cursorrules equivalent (Aider conventions file) into the headless execution"
+      ],
+      "exhausted_research_directions": [
+        "Cline and Roo Code (Abandoned because they require the VS Code UI, which the user explicitly avoids)"
+      ],
+      "suggested_actions": [
+        "Write the exact CLI syntax the C# IdeBridge will use to spawn the Aider process"
+      ],
+      "accepted_actions": [
+        "Adopt \u0027Headless Ghost\u0027 architecture: Aider runs entirely in the background via CLI",
+        "User retains Visual Studio (Full) as the exclusive IDE for code review and refactoring"
+      ],
+      "GlobalSyncVersion": 115
+    },
+    {
+      "Id": "topic_code_quality_standards_001",
+      "BlockVersion": 3,
+      "LastUpdate": "2026-03-17T10:16:38Z",
+      "Description": "Coding Standards and SOLID Principles for Local Agent Execution",
+      "Standards": [
+        "SOLID Principles: Strictly adhere to Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion.",
+        "Readability First: Use highly expressive, human-readable variable and method names. Absolutely no cryptic abbreviations.",
+        "Modularity: Prevent monolithic functions. Extract complex logic into focused, well-named private helper methods.",
+        "Comment Intent, Not Mechanics: Write comments to explain the \u0027WHY\u0027 (business logic, edge cases, workarounds) rather than the \u0027WHAT\u0027 (which the syntax already explains).",
+        "Defensive Programming: Include proper null checks, error handling, and logging for unexpected states.",
+        "Human-Centric Fallback: All AI-generated code MUST be easily debuggable by a human. Avoid overly clever syntax or hyper-dense LINQ chains if it compromises readability."
+      ],
+      "active_research_directions": [
+        "Defining the exact structure of the CONVENTIONS.md file for Aider to enforce human-readable code generation"
+      ],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [
+        "Generate the IDE_TASK payload to create CONVENTIONS.md"
+      ],
+      "accepted_actions": [
+        "Adopt \u0027Zero-Touch\u0027 philosophy: User delegates syntax writing to Aider and transitions to a Code Reviewer / Architect role.",
+        "Enforce strict human-readability constraints to mitigate the \u0027Black Box\u0027 risk of autonomous AI coding."
+      ],
+      "GlobalSyncVersion": 116
+    },
+    {
+      "Id": "topic_architect_persona_001",
+      "BlockVersion": 2,
+      "LastUpdate": "2026-03-17T14:45:00Z",
+      "Description": "Definition and constraints of the AI System Architect persona",
+      "active_research_directions": [
+        "Refining the exact phrasing of the System Prompt to guarantee the AI acts as a \u0027brake\u0027 rather than an \u0027accelerator\u0027",
+        "Defining the \u0027Review Gate\u0027 protocol: What exactly must the user approve before the AI is allowed to write an IDE_TASK?"
+      ],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [
+        "Review the proposed Architect Persona Draft and iterate on the constraints"
+      ],
+      "accepted_actions": [
+        "Suspend all code generation and IDE_TASK creation until the Architect persona rules are finalized and embedded in the system directives",
+        "Adopt the industry standard \u0027Prompt-as-a-Persona\u0027 methodology to force critical thinking and prevent rushing to implementation"
+      ],
+      "GlobalSyncVersion": 118
     }
   ]
 }
