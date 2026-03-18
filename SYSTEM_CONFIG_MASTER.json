@@ -1,6 +1,6 @@
 {
-  "Version": 214,
-  "LastUpdate": "2026-03-18T18:13:39",
+  "Version": 215,
+  "LastUpdate": "2026-03-18T18:20:55",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1631,8 +1631,8 @@
     },
     {
       "Id": "topic_domain_model_001",
-      "BlockVersion": 1,
-      "LastUpdate": "2026-03-18T18:20:00Z",
+      "BlockVersion": 2,
+      "LastUpdate": "2026-03-18T18:28:00Z",
       "Description": "Ubiquitous Language and Core Domain Models (DDD)",
       "Entities": [
         {
@@ -1641,22 +1641,29 @@
           "Properties": [
             "Id (ValueObject: TaskId)",
             "TargetAgent (Enum: Frontend | Backend)",
-            "State (ValueObject: TaskState)",
+            "State (ValueObject: TaskPhase)",
             "Instruction (String)",
             "ContextFiles (List\u003CFilePath\u003E)"
           ]
         }
       ],
+      "PersistenceStrategy": {
+        "Pattern": "Repository Pattern",
+        "CurrentImplementation": "Flat JSON File",
+        "FutureImplementation": "SQL Database",
+        "Constraints": "Must use SemaphoreSlim in the JSON implementation to prevent concurrent I/O access violations."
+      },
       "active_research_directions": [
-        "Defining the exact state machine transitions for AgentTask (Pending -\u003E Phase1 -\u003E Review -\u003E Phase2 -\u003E Done)"
+        "Drafting the Aider CLI execution service (Process.Start wrapping) within the Infrastructure layer"
       ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [
-        "Established \u0027AgentTask\u0027 as the primary Aggregate Root for the IDE Bridge domain."
+        "Adopted Repository Pattern to keep the Domain database-agnostic.",
+        "Selected JSON for immediate persistence with a defined migration path to SQL."
       ],
-      "GlobalSyncVersion": 214
+      "GlobalSyncVersion": 215
     }
   ]
 }
