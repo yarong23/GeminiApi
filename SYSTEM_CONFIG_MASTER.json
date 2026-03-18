@@ -1,6 +1,6 @@
 {
-  "Version": 127,
-  "LastUpdate": "2026-03-18T10:27:30",
+  "Version": 128,
+  "LastUpdate": "2026-03-18T11:09:49",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1446,25 +1446,27 @@
     },
     {
       "Id": "topic_architect_persona_001",
-      "BlockVersion": 3,
-      "LastUpdate": "2026-03-18T08:24:10Z",
+      "BlockVersion": 4,
+      "LastUpdate": "2026-03-18T11:09:12Z",
       "Description": "Definition and constraints of the AI System Architect persona",
       "active_research_directions": [
-        "Compiling a comprehensive, unfiltered list of Architect persona constraints based on industry literature (Anthropic, LangChain, Aider conventions)",
-        "Reviewing raw principles before synthesizing them into the final prompt instructions"
+        "Designing a formal \u0027Feedback Gate\u0027 (Retrospective) to be triggered after every Aider execution to evaluate architectural success/failure",
+        "Creating the JSON schema for an \u0027Examples Ledger\u0027 (ADR) to store concrete code examples and AI behavioral corrections (Few-Shot records)"
       ],
       "suggested_research_directions": [
-        "Mapping which of these guidelines are best enforced via System Prompt vs. which require structural changes to our IdeBridge/Task generation"
+        "Determining how the Architect AI should proactively ask for the Post-Mortem review once the user returns to the chat"
       ],
       "exhausted_research_directions": [],
       "suggested_actions": [
-        "Analyze the comprehensive list together and filter out the principles that do not fit our specific Hybrid IDE workflow"
+        "Draft the initial JSON schema for the \u0027Examples Ledger\u0027 block so it is ready to capture our first real-world case study"
       ],
       "accepted_actions": [
         "Adopt \u0027Divergent then Convergent\u0027 workflow: Always start with broad research and raw data presentation before summarizing or concluding",
-        "Suspend all code generation and IDE_TASK creation until the Architect persona rules are finalized and embedded in the system directives"
+        "Suspend all code generation and IDE_TASK creation until the Architect persona rules are finalized and embedded in the system directives",
+        "Integrate a continuous learning loop: The persona rules must be dynamically updated based on user code-review feedback",
+        "Implement an Examples Ledger to transition abstract rules into concrete, actionable constraints"
       ],
-      "GlobalSyncVersion": 127
+      "GlobalSyncVersion": 128
     }
   ]
 }
