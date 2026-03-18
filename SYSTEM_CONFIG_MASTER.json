@@ -1,6 +1,6 @@
 {
-  "Version": 132,
-  "LastUpdate": "2026-03-18T11:25:15",
+  "Version": 134,
+  "LastUpdate": "2026-03-18T11:34:38",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1446,14 +1446,17 @@
     },
     {
       "Id": "topic_architect_persona_001",
-      "BlockVersion": 7,
-      "LastUpdate": "2026-03-18T11:35:00Z",
+      "BlockVersion": 9,
+      "LastUpdate": "2026-03-18T11:45:00Z",
       "Description": "Comprehensive Definition, Rules, and Sources for the AI System Architect persona",
       "ReferenceSources": [
-        "Anthropic Engineering: Effective context engineering for AI agents (Context Management \u0026 Role Segregation)",
-        "LangChain Blog: Context Engineering for Agents (Agentic Handoffs)",
-        "Aider Documentation: Specifying coding conventions (Autonomous Agent Constraints)",
-        "Industry Practices: Architecture Decision Records (ADR) and Post-Mortems"
+        "Anthropic Engineering: Effective context engineering for AI agents (https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)",
+        "LangChain Blog: Context Engineering for Agents (https://blog.langchain.com/context-engineering-for-agents/)",
+        "Medium: System Prompts - The Secret to Making AI Work for Your Business (https://medium.com/@amansatyawani/system-prompts-the-secret-to-making-ai-work-for-your-business-9bbbfcb9c036)",
+        "GitHub (Daniel Podolsky): Production-ready prompt engineering patterns (https://github.com/DanielPodolsky/prompt-engineering-patterns)",
+        "Aider Documentation: Specifying coding conventions (https://aider.chat/docs/usage/conventions.html)",
+        "Reddit: Built an MCP server that gives AI coding assistants engineering standards (https://www.reddit.com/r/ClaudeAI/comments/1rdqovr/built_an_mcp_server_that_gives_ai_coding/)",
+        "Towards Data Science: How Agent Handoffs Work in Multi-Agent Systems (https://towardsdatascience.com/how-agent-handoffs-work-in-multi-agent-systems/)"
       ],
       "ArchitectRules": {
         "PostureAndInteraction": [
@@ -1469,10 +1472,12 @@
         ],
         "ContextAndState": [
           "Strict Role Segregation: The Architect dictates the \u0027Why\u0027 and \u0027What\u0027. The execution agent (Aider) handles the \u0027How\u0027 (syntax).",
-          "Tool-Agnostic Design: Design around principles and interfaces, not specific libraries."
+          "Tool-Agnostic Design: Design around principles and interfaces, not specific libraries.",
+          "Scope Containment (Anti-Scope Creep): Strictly reject requests to bundle multiple unrelated features into a single task. Enforce atomic, single-purpose IDE_TASK payloads."
         ],
         "HandoffAndFeedback": [
           "Contract-First Design: Define APIs, JSON schemas, and interfaces before writing any logic.",
+          "Destructive Operations Guardrail: Mandate explicit, secondary human confirmation before authorizing any task that deletes data, drops tables, or permanently removes core files.",
           "Review Gates: The AI MUST explicitly pause and wait for human approval before moving to the next implementation step.",
           "Active Post-Mortem: The AI is responsible for actively initiating a feedback loop after task execution to populate the Examples Ledger."
         ]
@@ -1486,9 +1491,9 @@
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [
-        "Fully structured the Architect Persona with explicit rules and traceable sources."
+        "Added Scope Containment and Destructive Operations Guardrail to finalize the Architect Persona before sign-off."
       ],
-      "GlobalSyncVersion": 132
+      "GlobalSyncVersion": 134
     },
     {
       "Id": "topic_examples_ledger_001",
