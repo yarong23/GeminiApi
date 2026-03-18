@@ -1,6 +1,6 @@
 {
-  "Version": 150,
-  "LastUpdate": "2026-03-18T12:38:22",
+  "Version": 151,
+  "LastUpdate": "2026-03-18T12:40:43",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1424,8 +1424,8 @@
     },
     {
       "Id": "topic_code_quality_standards_001",
-      "BlockVersion": 4,
-      "LastUpdate": "2026-03-18T12:28:12Z",
+      "BlockVersion": 5,
+      "LastUpdate": "2026-03-18T12:45:00Z",
       "Description": "Coding Standards and SOLID Principles for Local Agent Execution",
       "Standards": [
         "SOLID Principles: Strictly adhere to Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion.",
@@ -1444,6 +1444,11 @@
           "4. Examples: Good vs. Bad anti-patterns."
         ]
       },
+      "HaltDirectives": [
+        "Phase 1 Restriction: Generate ONLY interfaces, DTOs, and method signatures.",
+        "Halt Command: End the response and wait for the user to explicitly type \u0027/ok\u0027 or provide review feedback.",
+        "Anti-Pattern Ban: Strictly DO NOT write internal business logic or implementation details during Phase 1."
+      ],
       "active_research_directions": [
         "Drafting the comprehensive AGENTS.md file incorporating Rule-Based, Few-Shot, and Gate-Driven methodologies"
       ],
@@ -1457,7 +1462,7 @@
         "Enforce strict human-readability constraints to mitigate the \u0027Black Box\u0027 risk of autonomous AI coding.",
         "Adopt AGENTS.md format as the primary contract for AI behavior to ensure cross-agent compatibility and structure."
       ],
-      "GlobalSyncVersion": 148
+      "GlobalSyncVersion": 151
     },
     {
       "Id": "topic_architect_persona_001",
