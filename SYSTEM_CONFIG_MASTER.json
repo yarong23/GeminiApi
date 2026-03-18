@@ -1,6 +1,6 @@
 {
-  "Version": 163,
-  "LastUpdate": "2026-03-18T12:52:01",
+  "Version": 174,
+  "LastUpdate": "2026-03-18T13:00:29",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1451,8 +1451,8 @@
     },
     {
       "Id": "topic_architect_persona_001",
-      "BlockVersion": 9,
-      "LastUpdate": "2026-03-18T11:45:00Z",
+      "BlockVersion": 11,
+      "LastUpdate": "2026-03-18T13:10:00Z",
       "Description": "Comprehensive Definition, Rules, and Sources for the AI System Architect persona",
       "ReferenceSources": [
         "Anthropic Engineering: Effective context engineering for AI agents (https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)",
@@ -1496,9 +1496,9 @@
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [
-        "Added Scope Containment and Destructive Operations Guardrail to finalize the Architect Persona before sign-off."
+        "Restored Architect Persona fully after accidental partial overwrite. Data integrity re-established."
       ],
-      "GlobalSyncVersion": 142
+      "GlobalSyncVersion": 173
     },
     {
       "Id": "topic_examples_ledger_001",
@@ -1541,7 +1541,7 @@
         "MANDATE: The AI relies entirely on the automated extension payload for State Hydration. No manual data compilation blocks are to be generated.",
         "MANDATE: Upon receiving the payload, the AI\u0027s first action MUST be the Persona routing question."
       ],
-      "GlobalSyncVersion": 147
+      "GlobalSyncVersion": 170
     },
     {
       "Id": "global_project_state_export",
@@ -1582,7 +1582,29 @@
       "active_research_directions": [
         "Drafting the comprehensive Aider CONVENTIONS.md file based on strict SOLID and readability standards"
       ],
-      "GlobalSyncVersion": 145
+      "GlobalSyncVersion": 168
+    },
+    {
+      "Id": "topic_ide_bridge_contract_001",
+      "BlockVersion": 2,
+      "LastUpdate": "2026-03-18T13:10:00Z",
+      "Description": "Communication Protocol between Gemini and the C# IdeBridge (Legacy)",
+      "Contract": {
+        "CommunicationMethod": "Direct String Broadcast",
+        "MandatoryTrigger": "[SYNC_BLOCK_START]",
+        "PrimaryAction": "IDE_WRITE",
+        "Syntax": "IDE_WRITE [File_Path] [File_Content]",
+        "ExecutionFlow": "Gemini (Architect) -\u003E Chrome Extension -\u003E C# IdeBridge -\u003E Local File System",
+        "Constraint": "Use this method ONLY for infrastructure files like CONVENTIONS.md or scripts. Do not use for bulk code generation until Aider is integrated."
+      },
+      "active_research_directions": [],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "Formalized the IDE_WRITE protocol in the system state to enable direct file creation via the existing C# Bridge."
+      ],
+      "GlobalSyncVersion": 174
     }
   ]
 }
