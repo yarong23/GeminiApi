@@ -1,6 +1,6 @@
 {
-  "Version": 134,
-  "LastUpdate": "2026-03-18T11:34:38",
+  "Version": 136,
+  "LastUpdate": "2026-03-18T11:49:08",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1511,6 +1511,25 @@
         "This block will serve as the primary database for Few-Shot prompting to align AI behavior with past human corrections."
       ],
       "GlobalSyncVersion": 130
+    },
+    {
+      "Id": "topic_state_hydration_001",
+      "BlockVersion": 2,
+      "LastUpdate": "2026-03-18T12:05:00Z",
+      "Description": "Stateless Cold Start and Multi-Persona Routing Strategy",
+      "active_research_directions": [],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [
+        "Evaluating the Trade-off Matrix for State Hydration (Resolved: Explicit State Machine Handshake adopted)"
+      ],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "Implemented \u0027Session Init Handshake\u0027 Contract.",
+        "MANDATE: Upon receiving the initial settings payload and topic in a new thread, the AI MUST NOT begin problem-solving.",
+        "MANDATE: The AI\u0027s first response MUST be to prompt the user to explicitly select an active Persona (e.g., Architect) from the available configurations.",
+        "MANDATE: Only after the user selects a Persona will the AI apply the corresponding rule-set and address the topic."
+      ],
+      "GlobalSyncVersion": 136
     }
   ]
 }
