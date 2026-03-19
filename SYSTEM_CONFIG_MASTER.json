@@ -1,6 +1,6 @@
 {
-  "Version": 281,
-  "LastUpdate": "2026-03-18T19:27:54",
+  "Version": 294,
+  "LastUpdate": "2026-03-19T09:42:45",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1179,25 +1179,27 @@
     },
     {
       "Id": "topic_system_directives_001",
-      "BlockVersion": 4,
-      "LastUpdate": "2026-03-16T14:08:30Z",
+      "BlockVersion": 5,
+      "LastUpdate": "2026-03-18T19:50:00Z",
       "Description": "System Directives and Behavioral Rules",
       "Directives": [
         "You are managing the attached JSON state. This is the absolute baseline.",
         "When you suggest a new action or research direction, you MUST proactively generate a Delta Update JSON block.",
-        "CRITICAL DELTA PROTOCOL: REGARDLESS of the tool being used (including Deep Research or external plugins), you MUST print the exact string [SYNC_BLOCK_START] on its own line immediately before ANY JSON code block. NEVER output a JSON update without this visual trigger. Increment the BlockVersion and update the LastUpdate timestamp (ISO format).",
-        "STRICT VERSION MATH: The field \u0027GlobalSyncVersion\u0027 inside a block MUST NEVER be incremented (\u002B=). It must always be directly ASSIGNED (=) the exact integer value of the overarching global system \u0027Version\u0027 at the moment of update. It is a timestamp, not a counter.",
-        "EXECUTION TRIGGER: When the user asks to \u0027change the settings file\u0027 (\u05DC\u05E9\u05E0\u05D5\u05EA \u05DE\u05E9\u05D4\u05D5 \u05D1\u05E7\u05D5\u05D1\u05E5 \u05D4\u05D4\u05D2\u05D3\u05E8\u05D5\u05EA), this is a strict command to execute a state mutation. You must immediately identify the relevant blocks, apply the requested changes, and output the updated Delta JSON blocks. Do not merely acknowledge the request in text.",
-        "Tone: Smart friend, professional, precise. Never conclude topics; learning is infinite. Prefer substantive debate over polite agreement.",
-        "Always distinguish between known scientific facts (cite sources) and AI deductions (explain logic).",
+        "CRITICAL DELTA PROTOCOL: For State mutations and IDE_WRITE commands, use the exact string [SYNC_BLOCK_START]. For dispatching tasks to the local agent (AGENT_TASK), you MUST use the exact string [TASK_BLOCK]. NEVER output a JSON block without its designated visual trigger.",
+        "STRICT VERSION MATH: The field \u0027GlobalSyncVersion\u0027 inside a block MUST NEVER be incremented (\u002B=). It must always be directly ASSIGNED (=) the exact integer value of the overarching global system \u0027Version\u0027.",
+        "EXECUTION TRIGGER: When the user asks to \u0027change the settings file\u0027, apply changes and output Delta blocks.",
+        "Tone: Smart friend, professional, precise. Never conclude topics; prefer substantive debate.",
+        "Always distinguish between known scientific facts and AI deductions.",
         "Perform comparative analysis between active research and history before updating protocols."
       ],
       "active_research_directions": [],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
       "suggested_actions": [],
-      "accepted_actions": [],
-      "GlobalSyncVersion": 202
+      "accepted_actions": [
+        "Split JSON trigger string protocol: [SYNC_BLOCK_START] for state/IDE, [TASK_BLOCK] for AGENT_TASK."
+      ],
+      "GlobalSyncVersion": 285
     },
     {
       "Id": "topic_fermentations_to_consider_001",
@@ -1394,8 +1396,8 @@
     },
     {
       "Id": "topic_dual_agent_architecture_001",
-      "BlockVersion": 16,
-      "LastUpdate": "2026-03-18T18:48:00Z",
+      "BlockVersion": 22,
+      "LastUpdate": "2026-03-19T09:45:00Z",
       "Description": "Multi-Agent IDE Integration Paradigm (Split FE/BE)",
       "Architecture": {
         "Architect": "Gemini (Web)",
@@ -1421,23 +1423,29 @@
           }
         ]
       },
-      "CrossAgentSync": {
-        "Method": "Server-Sent Events (SSE)",
-        "TriggerState": "AwaitingReview OR Failed",
-        "Action": "FE Chrome Extension connects via EventSource -\u003E BE pushes state changes -\u003E FE injects into Gemini Chat",
-        "SafetyConstraint": "Extension MUST verify it injects the payload only once per TaskVersion to prevent infinite loop injections."
+      "AiderCliProtocol": {
+        "TargetModel": "gemini/gemini-2.5-flash",
+        "HeadlessExecutionFlags": [
+          "--no-auto-commits",
+          "--yes",
+          "--no-color",
+          "--read AGENTS.md"
+        ],
+        "CommandTemplate": "aider --model {TargetModel} --no-auto-commits --yes --no-color --read {ContractPath} --message \u0022{AgentTask.Instruction}\u0022 {AgentTask.ContextFiles}"
       },
-      "active_research_directions": [],
+      "active_research_directions": [
+        "Verifying gemini-2.5-flash execution stability under heavy context loads."
+      ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [
-        "Long Polling (Rejected: Inefficient for localhost, blocks threads)",
-        "SignalR/WebSockets (Rejected: Overkill for unidirectional status updates)"
+        "gemini/gemini-1.5-* variants (Rejected: Deprecated by Google as of late 2025, throws 404)",
+        "gemini/gemini-2.5-pro (Rejected: Hits strict Rate Limits on Free Tier)"
       ],
       "suggested_actions": [],
       "accepted_actions": [
-        "Adopted SSE (Server-Sent Events) for cross-agent synchronization."
+        "Upgraded TargetModel to gemini/gemini-2.5-flash to utilize current-gen endpoints with high free-tier quotas."
       ],
-      "GlobalSyncVersion": 257
+      "GlobalSyncVersion": 294
     },
     {
       "Id": "topic_code_quality_standards_001",
@@ -1670,23 +1678,24 @@
     },
     {
       "Id": "topic_infrastructure_execution_001",
-      "BlockVersion": 7,
-      "LastUpdate": "2026-03-18T19:20:00Z",
+      "BlockVersion": 9,
+      "LastUpdate": "2026-03-19T09:35:00Z",
       "Description": "Infrastructure Layer: Agent Execution Service",
       "BootstrapPhase": {
-        "Status": "Sandbox Testing",
-        "Strategy": "Executing first AGENT_TASK in an isolated I/O sandbox (Input: IdeBridgeTemp, Output: wow) to debug the API process execution flow."
+        "Status": "Manual Fallback Debugging",
+        "Strategy": "Executing Aider manually via CLI to isolate process spawning issues from Aider\u0027s core execution capabilities."
       },
-      "active_research_directions": [
-        "Debugging Aider process execution, stdout/stderr interception, and file system I/O via the C# API."
+      "Prerequisites": [
+        "Environment Variable \u0027ANTHROPIC_API_KEY\u0027 MUST be set at the System/User level so both CLI and C# Windows Services can inherit it."
       ],
+      "active_research_directions": [],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [
-        "Architectural override granted: Bypassing Phase 1 for this specific task to test full write capabilities in a safe directory."
+        "Identified missing ANTHROPIC_API_KEY environment variable. Required for litellm routing."
       ],
-      "GlobalSyncVersion": 281
+      "GlobalSyncVersion": 289
     }
   ]
 }
