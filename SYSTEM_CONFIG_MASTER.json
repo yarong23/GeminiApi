@@ -1,6 +1,6 @@
 {
-  "Version": 300,
-  "LastUpdate": "2026-03-20T10:59:27",
+  "Version": 372,
+  "LastUpdate": "2026-03-21T18:32:36",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1199,7 +1199,7 @@
       "accepted_actions": [
         "Split JSON trigger string protocol: [SYNC_BLOCK_START] for state/IDE, [TASK_BLOCK] for AGENT_TASK."
       ],
-      "GlobalSyncVersion": 285
+      "GlobalSyncVersion": 328
     },
     {
       "Id": "topic_fermentations_to_consider_001",
@@ -1396,8 +1396,8 @@
     },
     {
       "Id": "topic_dual_agent_architecture_001",
-      "BlockVersion": 22,
-      "LastUpdate": "2026-03-19T09:45:00Z",
+      "BlockVersion": 12,
+      "LastUpdate": "2026-03-18T17:55:00Z",
       "Description": "Multi-Agent IDE Integration Paradigm (Split FE/BE)",
       "Architecture": {
         "Architect": "Gemini (Web)",
@@ -1408,68 +1408,54 @@
             "Stack": [
               "JavaScript",
               "Chrome Extensions V3"
-            ],
-            "ContractFile": "AGENTS.md"
+            ]
           },
           {
             "Role": "Backend Agent",
-            "Path": "C:\\Layla\\GeminiConfigApi",
+            "Path": "C:\\Layla\\CodeAgent",
             "Stack": [
               "C#",
               ".NET 8",
               "Windows Services"
-            ],
-            "ContractFile": "AGENTS.md"
+            ]
           }
         ]
       },
-      "AiderCliProtocol": {
-        "TargetModel": "gemini/gemini-2.5-flash",
-        "HeadlessExecutionFlags": [
-          "--no-auto-commits",
-          "--yes",
-          "--no-color",
-          "--read AGENTS.md"
-        ],
-        "CommandTemplate": "aider --model {TargetModel} --no-auto-commits --yes --no-color --read {ContractPath} --message \u0022{AgentTask.Instruction}\u0022 {AgentTask.ContextFiles}"
-      },
       "active_research_directions": [
-        "Verifying gemini-2.5-flash execution stability under heavy context loads."
+        "Defining unique AGENTS.md for JavaScript Frontend to handle Chrome API specifics",
+        "Coordinating cross-agent communication protocols (API Contract)"
       ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [
-        "gemini/gemini-1.5-* variants (Rejected: Deprecated by Google as of late 2025, throws 404)",
-        "gemini/gemini-2.5-pro (Rejected: Hits strict Rate Limits on Free Tier)"
+        "Monolithic Agent approach (Rejected: High context noise and cross-language confusion)"
       ],
-      "suggested_actions": [],
       "accepted_actions": [
-        "Upgraded TargetModel to gemini/gemini-2.5-flash to utilize current-gen endpoints with high free-tier quotas."
+        "Adopt Multi-Agent Split architecture for context window optimization."
       ],
-      "GlobalSyncVersion": 294
+      "GlobalSyncVersion": 352
     },
     {
       "Id": "topic_code_quality_standards_001",
-      "BlockVersion": 12,
-      "LastUpdate": "2026-03-18T18:15:00Z",
-      "Description": "Coding Standards and SOLID Principles with DDD Enforcement",
+      "BlockVersion": 10,
+      "LastUpdate": "2026-03-18T14:40:00Z",
+      "Description": "Coding Standards and SOLID Principles for Local Agent Execution",
       "Standards": [
-        "SOLID \u0026 DDD: Mandatory layered architecture.",
-        "Domain Layer: Contains Entities, Value Objects, and Domain Logic. Pure C# with no external dependencies.",
-        "Application Layer: Orchestrates tasks, uses Repositories, and handles DTO mapping.",
-        "Infrastructure Layer: Implements File System, Git, and Network communication.",
-        "Method Constraints: MAX 25 logical lines. Logic must be in the Domain.",
-        "Value Objects: Use records for immutable Value Objects to ensure type safety."
+        "SOLID Principles: Mandatory adherence.",
+        "Method Constraints: MAX 25 logical lines, MAX 2 levels of nesting.",
+        "C# Modernity: File-scoped namespaces, Async/Await for I/O, C# 12\u002B syntax.",
+        "DI Enforcement: Exclusive use of Constructor Injection, no \u0027new\u0027 for services.",
+        "Documentation: XML tags (///) for all public members.",
+        "Modularity: High cohesion, low coupling, no monolithic classes."
       ],
-      "active_research_directions": [
-        "Defining the Ubiquitous Language for the CodeAgent Domain"
-      ],
+      "active_research_directions": [],
       "suggested_research_directions": [],
-      "exhausted_research_directions": [],
-      "suggested_actions": [],
-      "accepted_actions": [
-        "Adopted DDD (Domain-Driven Design) as the primary architectural pattern for the Backend."
+      "exhausted_research_directions": [
+        "Markdown bolding in AGENTS.md (Rejected: Created inconsistency and unnecessary noise)"
       ],
-      "GlobalSyncVersion": 213
+      "accepted_actions": [
+        "Standardized AGENTS.md content to a clean, non-formatted Key-Value structure."
+      ],
+      "GlobalSyncVersion": 351
     },
     {
       "Id": "topic_architect_persona_001",
@@ -1519,20 +1505,27 @@
     },
     {
       "Id": "topic_examples_ledger_001",
-      "BlockVersion": 1,
-      "LastUpdate": "2026-03-18T11:15:00Z",
+      "BlockVersion": 2,
+      "LastUpdate": "2026-03-18T12:50:00Z",
       "Description": "Architecture Decision Records and Few-Shot Learning Examples",
-      "Ledger": [],
+      "Ledger": [
+        {
+          "Type": "Incident",
+          "Date": "2026-03-18",
+          "Issue": "AI assumed standard JSON payload for IDE_WRITE without knowing the specific IDE Bridge API contract previously defined in another chat.",
+          "Resolution": "Halted execution. Pending exact schema from user. Will update system directives with the correct schema once provided."
+        }
+      ],
       "active_research_directions": [
-        "Defining the exact JSON schema for an individual ledger entry (e.g., Incident, Flawed Assumption, Corrective Action, New Rule)"
+        "Acquiring exact IDE Bridge communication protocol/schema from the user"
       ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [
-        "This block will serve as the primary database for Few-Shot prompting to align AI behavior with past human corrections."
+        "Halt execution when lacking integration documentation."
       ],
-      "GlobalSyncVersion": 183
+      "GlobalSyncVersion": 344
     },
     {
       "Id": "topic_state_hydration_001",
@@ -1617,7 +1610,7 @@
       "accepted_actions": [
         "Enforced Absolute Path requirement for all IDE_WRITE operations."
       ],
-      "GlobalSyncVersion": 204
+      "GlobalSyncVersion": 347
     },
     {
       "Id": "topic_context_management_001",
@@ -1674,27 +1667,88 @@
         "Adopted Repository Pattern to keep the Domain database-agnostic.",
         "Selected JSON for immediate persistence with a defined migration path to SQL."
       ],
-      "GlobalSyncVersion": 215
+      "GlobalSyncVersion": 333
     },
     {
       "Id": "topic_infrastructure_execution_001",
-      "BlockVersion": 15,
-      "LastUpdate": "2026-03-20T10:58:00Z",
+      "BlockVersion": 19,
+      "LastUpdate": "2026-03-20T18:34:37Z",
       "Description": "Infrastructure Layer: Agent Execution Service",
       "BootstrapPhase": {
-        "Status": "SOLID Refactoring",
-        "Strategy": "Decoupling low-level I/O operations from domain logic by abstracting disk access into a generic file store."
+        "Status": "E2E Pipeline Execution",
+        "Strategy": "Deploying a distinct validation task to confirm the full Web UI -\u003E Extension -\u003E Bridge -\u003E Aider -\u003E Disk data flow."
       },
-      "active_research_directions": [],
-      "suggested_research_directions": [],
-      "exhausted_research_directions": [
-        "Monolithic Repository implementation (Rejected: Violates SRP, tightly couples I/O with Domain logic)"
+      "active_research_directions": [
+        "Monitoring the standard output stream for a successful E2E code mutation."
       ],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [
-        "Refactored data layer to strict SOLID principles: Created IJsonFileStore for generic thread-safe I/O, and refactored AgentTaskRepository to manage in-memory state and consume the file store via Dependency Injection."
+        "Resolved Chrome extension Service Worker/Content Script directory desync.",
+        "Pipeline is now verified from end-to-end. Ready for execution."
       ],
-      "GlobalSyncVersion": 300
+      "GlobalSyncVersion": 353
+    },
+    {
+      "Id": "topic_infrastructure_hosting_001",
+      "BlockVersion": 2,
+      "LastUpdate": "2026-03-21T13:56:00Z",
+      "Description": "Infrastructure Layer: Windows Service Daemonization",
+      "BootstrapPhase": {
+        "Status": "Implementation",
+        "Strategy": "Issuing fresh TaskId for Aider to refactor the project into a Windows Service-capable architecture."
+      },
+      "active_research_directions": [
+        "Ensuring ContentRootPath correctly maps to AppContext.BaseDirectory for background service execution."
+      ],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "Regenerated TaskId for Windows Service refactoring."
+      ],
+      "GlobalSyncVersion": 358
+    },
+    {
+      "Id": "topic_infrastructure_config_001",
+      "BlockVersion": 11,
+      "LastUpdate": "2026-03-21T18:32:00Z",
+      "Description": "Infrastructure Layer: Serialization Alignment",
+      "BootstrapPhase": {
+        "Status": "Debugging",
+        "Strategy": "Aligning AgentTask entity with System.Text.Json requirements for parameterized constructors and Value Objects."
+      },
+      "active_research_directions": [
+        "Ensuring AgentTask constructor parameters map 1:1 with public properties."
+      ],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "Identified constructor-property mismatch in AgentTask entity."
+      ],
+      "GlobalSyncVersion": 372
+    },
+    {
+      "Id": "topic_infrastructure_execution_002",
+      "BlockVersion": 15,
+      "LastUpdate": "2026-03-21T17:58:00Z",
+      "Description": "Infrastructure Layer: E2E Validation Task",
+      "BootstrapPhase": {
+        "Status": "Testing",
+        "Strategy": "Re-issuing E2E validation task with fresh TaskId (D5E6F7G8) for pipeline verification."
+      },
+      "active_research_directions": [
+        "Confirming repository-level consistency for automated commits."
+      ],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "Generated fresh TaskId for E2E validation."
+      ],
+      "GlobalSyncVersion": 371
     }
   ]
 }
