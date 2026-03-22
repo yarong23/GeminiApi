@@ -1,6 +1,6 @@
 {
-  "Version": 372,
-  "LastUpdate": "2026-03-21T18:32:36",
+  "Version": 395,
+  "LastUpdate": "2026-03-22T18:23:39",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1728,19 +1728,19 @@
       "accepted_actions": [
         "Identified constructor-property mismatch in AgentTask entity."
       ],
-      "GlobalSyncVersion": 372
+      "GlobalSyncVersion": 391
     },
     {
       "Id": "topic_infrastructure_execution_002",
-      "BlockVersion": 15,
-      "LastUpdate": "2026-03-21T17:58:00Z",
+      "BlockVersion": 14,
+      "LastUpdate": "2026-03-21T17:55:00Z",
       "Description": "Infrastructure Layer: E2E Validation Task",
       "BootstrapPhase": {
         "Status": "Testing",
-        "Strategy": "Re-issuing E2E validation task with fresh TaskId (D5E6F7G8) for pipeline verification."
+        "Strategy": "Re-issuing E2E validation task with fresh TaskId (C2D3E4F5) to verify pipeline persistence and configuration stability."
       },
       "active_research_directions": [
-        "Confirming repository-level consistency for automated commits."
+        "Monitoring Aider\u0027s consistent application of the CommitDescription field across multiple iterations."
       ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
@@ -1748,7 +1748,117 @@
       "accepted_actions": [
         "Generated fresh TaskId for E2E validation."
       ],
-      "GlobalSyncVersion": 371
+      "GlobalSyncVersion": 379
+    },
+    {
+      "Id": "topic_infrastructure_feedback_loop_001",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-03-21T20:20:00Z",
+      "Description": "Infrastructure Layer: Closed-Loop Agent Feedback",
+      "BootstrapPhase": {
+        "Status": "Implementation",
+        "Strategy": "Refactoring AiderExecutionService to capture stdout/stderr and updating the TaskStore with results for extension retrieval."
+      },
+      "active_research_directions": [
+        "Asynchronous process output streaming to prevent API timeouts during long Aider runs."
+      ],
+      "suggested_research_directions": [
+        "Implementing a GET /api/tasks/{id} endpoint for the extension to poll for results."
+      ],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "Initiated \u0027Full Loop\u0027 architecture transition.",
+        "Added CommitDescription to subsequent tasks."
+      ],
+      "GlobalSyncVersion": 392
+    },
+    {
+      "Id": "topic_infrastructure_feedback_loop_002",
+      "BlockVersion": 19,
+      "LastUpdate": "2026-03-22T15:45:00Z",
+      "Description": "Infrastructure Layer: SSE Real-Time Streaming",
+      "BootstrapPhase": {
+        "Status": "Implementation",
+        "Strategy": "Direct implementation of SSE streaming and stdout redirection as requested."
+      },
+      "active_research_directions": [],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "Implementing server-side SSE infrastructure."
+      ],
+      "GlobalSyncVersion": 394
+    },
+    {
+      "Id": "topic_infrastructure_mcp_001",
+      "BlockVersion": 16,
+      "LastUpdate": "2026-03-22T12:35:00Z",
+      "Description": "Infrastructure Layer: MCP Protocol Alignment",
+      "BootstrapPhase": {
+        "Status": "Architectural Review",
+        "Strategy": "Maintaining custom Bridge for stateful task management while aligning with MCP standards (SSE/TaskIds)."
+      },
+      "active_research_directions": [
+        "Evaluating SEP-1686 (Long Running Tasks) for formal MCP compliance."
+      ],
+      "suggested_research_directions": [
+        "Adding an \u0027mcp/list_tools\u0027 endpoint to the Bridge to allow it to be used by Claude Desktop/Cursor."
+      ],
+      "exhausted_research_directions": [
+        "Generic Shell MCP Servers (Rejected: Lacks Aider-specific context/persistence)."
+      ],
+      "accepted_actions": [
+        "Confirmed custom Bridge as the primary orchestrator."
+      ],
+      "GlobalSyncVersion": 390
+    },
+    {
+      "Id": "topic_infrastructure_quality_001",
+      "BlockVersion": 17,
+      "LastUpdate": "2026-03-22T13:05:00Z",
+      "Description": "Infrastructure Layer: Code Quality \u0026 Model Alignment",
+      "BootstrapPhase": {
+        "Status": "Quality Audit",
+        "Strategy": "Upgrading model requirements for Aider tasks and initiating a \u0027Solidification\u0027 pass on the Bridge codebase."
+      },
+      "active_research_directions": [
+        "Identifying \u0027lazy\u0027 patterns introduced by Flash models in the current Bridge implementation."
+      ],
+      "suggested_research_directions": [
+        "Switching Aider to --model vertex_ai/gemini-3-pro or similar high-reasoning endpoint."
+      ],
+      "exhausted_research_directions": [],
+      "suggested_actions": [
+        "Perform a \u0027Clean Code\u0027 pass on the JsonFileStore and SSE logic."
+      ],
+      "accepted_actions": [
+        "Acknowledged low code quality and identified model latency/reasoning trade-offs."
+      ],
+      "GlobalSyncVersion": 389
+    },
+    {
+      "Id": "topic_infrastructure_quality_002",
+      "BlockVersion": 18,
+      "LastUpdate": "2026-03-22T15:20:00Z",
+      "Description": "Infrastructure Layer: Model Reasoning Upgrade",
+      "BootstrapPhase": {
+        "Status": "Implementation",
+        "Strategy": "Executing critical serialization and SSE fixes using a high-reasoning Pro model to ensure architectural integrity."
+      },
+      "active_research_directions": [
+        "Verifying TaskIdJsonConverter implementation with strictly typed Dictionary keys."
+      ],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [
+        "Gemini-Flash for Infrastructure (Rejected: Low code quality/lazy implementation)."
+      ],
+      "accepted_actions": [
+        "Identified the need for API-based Pro models.",
+        "Re-issued the Serialization/SSE fix task with a fresh ID."
+      ],
+      "GlobalSyncVersion": 395
     }
   ]
 }
