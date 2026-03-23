@@ -1,6 +1,6 @@
 {
-  "Version": 395,
-  "LastUpdate": "2026-03-22T18:23:39",
+  "Version": 405,
+  "LastUpdate": "2026-03-22T18:34:24",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1712,35 +1712,37 @@
     },
     {
       "Id": "topic_infrastructure_config_001",
-      "BlockVersion": 11,
-      "LastUpdate": "2026-03-21T18:32:00Z",
-      "Description": "Infrastructure Layer: Serialization Alignment",
+      "BlockVersion": 8,
+      "LastUpdate": "2026-03-21T16:51:00Z",
+      "Description": "Infrastructure Layer: Configuration Management Refactor",
       "BootstrapPhase": {
-        "Status": "Debugging",
-        "Strategy": "Aligning AgentTask entity with System.Text.Json requirements for parameterized constructors and Value Objects."
+        "Status": "Implementation",
+        "Strategy": "Refactoring AiderExecutionService to consume the new IConfigurationService for API keys."
       },
       "active_research_directions": [
-        "Ensuring AgentTask constructor parameters map 1:1 with public properties."
+        "Testing dynamic environment variable injection from appsettings.json."
       ],
       "suggested_research_directions": [],
-      "exhausted_research_directions": [],
-      "suggested_actions": [],
-      "accepted_actions": [
-        "Identified constructor-property mismatch in AgentTask entity."
+      "exhausted_research_directions": [
+        "Hardcoded ProcessStartInfo environment keys (Rejected: Violation of security best practices)."
       ],
-      "GlobalSyncVersion": 391
+      "accepted_actions": [
+        "Updated Task Block schema to include \u0027CommitDescription\u0027.",
+        "Initiated refactor of AiderExecutionService to use IConfigurationService."
+      ],
+      "GlobalSyncVersion": 400
     },
     {
       "Id": "topic_infrastructure_execution_002",
-      "BlockVersion": 14,
-      "LastUpdate": "2026-03-21T17:55:00Z",
+      "BlockVersion": 15,
+      "LastUpdate": "2026-03-21T17:58:00Z",
       "Description": "Infrastructure Layer: E2E Validation Task",
       "BootstrapPhase": {
         "Status": "Testing",
-        "Strategy": "Re-issuing E2E validation task with fresh TaskId (C2D3E4F5) to verify pipeline persistence and configuration stability."
+        "Strategy": "Re-issuing E2E validation task with fresh TaskId (D5E6F7G8) for pipeline verification."
       },
       "active_research_directions": [
-        "Monitoring Aider\u0027s consistent application of the CommitDescription field across multiple iterations."
+        "Confirming repository-level consistency for automated commits."
       ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
@@ -1748,7 +1750,7 @@
       "accepted_actions": [
         "Generated fresh TaskId for E2E validation."
       ],
-      "GlobalSyncVersion": 379
+      "GlobalSyncVersion": 404
     },
     {
       "Id": "topic_infrastructure_feedback_loop_001",
@@ -1859,6 +1861,24 @@
         "Re-issued the Serialization/SSE fix task with a fresh ID."
       ],
       "GlobalSyncVersion": 395
+    },
+    {
+      "Id": "topic_infrastructure_claude_switch_001",
+      "BlockVersion": 20,
+      "LastUpdate": "2026-03-22T18:35:00Z",
+      "Description": "Infrastructure Layer: Claude Code CLI Integration",
+      "BootstrapPhase": {
+        "Status": "Implementation",
+        "Strategy": "Replacing Aider with Claude Code CLI (Sonnet 4.5) as the primary execution engine."
+      },
+      "active_research_directions": [],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "Defined ClaudeCodeExecutionService implementation using IAgentExecutionService interface."
+      ],
+      "GlobalSyncVersion": 405
     }
   ]
 }
