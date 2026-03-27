@@ -1,6 +1,6 @@
 {
-  "Version": 405,
-  "LastUpdate": "2026-03-22T18:34:24",
+  "Version": 414,
+  "LastUpdate": "2026-03-27T12:46:51",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1879,6 +1879,38 @@
         "Defined ClaudeCodeExecutionService implementation using IAgentExecutionService interface."
       ],
       "GlobalSyncVersion": 405
+    },
+    {
+      "Id": "topic_infrastructure_verification",
+      "BlockVersion": 20,
+      "LastUpdate": "2026-03-27T11:45:00Z",
+      "active_research_directions": [
+        "SSE-based output redirection from Aider to Gemini",
+        "Validation of \u0027stam25\u0027 unique task ID routing",
+        "Real-time token usage monitoring via SSE streams"
+      ],
+      "suggested_actions": [
+        "Verify the receipt of stam25 in your FE system",
+        "Paste the Aider output once received via the SSE bridge",
+        "Prepare the SmartContext DDD refactor task upon successful \u0027Hello\u0027 receipt"
+      ],
+      "GlobalSyncVersion": 413
+    },
+    {
+      "Id": "topic_ddd_refactor_001",
+      "BlockVersion": 4,
+      "LastUpdate": "2026-03-27T11:50:00Z",
+      "active_research_directions": [
+        "Domain Layer isolation in SmartContext",
+        "Qwen-Plus \u0027diff\u0027 format reliability for multi-file C# refactors",
+        "Value Object patterns for .NET 10 Records"
+      ],
+      "suggested_actions": [
+        "Execute DDD_REFACTOR_001 and monitor the SSE stream for code changes",
+        "Review the Aider-generated diffs for Rich Domain Model compliance",
+        "Prepare a follow-up task for the Application Layer (Commands/Queries)"
+      ],
+      "GlobalSyncVersion": 414
     }
   ]
 }
