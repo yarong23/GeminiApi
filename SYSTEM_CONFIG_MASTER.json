@@ -1,6 +1,6 @@
 {
-  "Version": 414,
-  "LastUpdate": "2026-03-27T12:46:51",
+  "Version": 444,
+  "LastUpdate": "2026-03-27T17:26:29",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -1894,23 +1894,23 @@
         "Paste the Aider output once received via the SSE bridge",
         "Prepare the SmartContext DDD refactor task upon successful \u0027Hello\u0027 receipt"
       ],
-      "GlobalSyncVersion": 413
+      "GlobalSyncVersion": 421
     },
     {
       "Id": "topic_ddd_refactor_001",
-      "BlockVersion": 4,
-      "LastUpdate": "2026-03-27T11:50:00Z",
+      "BlockVersion": 14,
+      "LastUpdate": "2026-03-27T13:25:00Z",
       "active_research_directions": [
-        "Domain Layer isolation in SmartContext",
-        "Qwen-Plus \u0027diff\u0027 format reliability for multi-file C# refactors",
-        "Value Object patterns for .NET 10 Records"
+        "Forced context hydration via \u0027/add\u0027 directives",
+        "Cross-project namespace alignment for C# 13",
+        "Dependency Injection registration in SmartContext.API for the new layers"
       ],
       "suggested_actions": [
-        "Execute DDD_REFACTOR_001 and monitor the SSE stream for code changes",
-        "Review the Aider-generated diffs for Rich Domain Model compliance",
-        "Prepare a follow-up task for the Application Layer (Commands/Queries)"
+        "Monitor the Aider output for \u0027Added [File] to the chat\u0027 confirmations",
+        "Verify that the new project files (Domain/Application/Infrastructure) are created correctly",
+        "Run \u0027dotnet build\u0027 in the root to ensure all project references are valid"
       ],
-      "GlobalSyncVersion": 414
+      "GlobalSyncVersion": 444
     }
   ]
 }
