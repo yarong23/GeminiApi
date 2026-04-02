@@ -1,6 +1,6 @@
 {
-  "Version": 534,
-  "LastUpdate": "2026-04-02T18:07:25",
+  "Version": 535,
+  "LastUpdate": "2026-04-02T18:22:44",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -2117,6 +2117,16 @@
       ],
       "suggested_actions": [],
       "GlobalSyncVersion": 534
+    },
+    {
+      "Id": "record_strategy_prompt_formulation_001",
+      "ParentId": "topic_context_hallucination_prevention_001",
+      "Type": "ResolutionStrategy",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-04-02T18:21:00Z",
+      "Name": "Anti-Hallucination Prompt Formulation Protocol (SUSE AI Based)",
+      "Description": "Upon receiving a user query, the AI MUST NOT answer immediately. Step 1: The AI constructs an optimized Meta-Prompt based on SUSE AI guidelines (Clear expectations, CoT, Output Constraints). Step 2: This Meta-Prompt MUST explicitly list all active JSON data variables currently held by the AI (The Handshake). Step 3: The AI presents this Meta-Prompt to the user. Step 4: Only upon explicit user approval does the AI execute the Meta-Prompt to generate the final response.",
+      "GlobalSyncVersion": 535
     }
   ]
 }
