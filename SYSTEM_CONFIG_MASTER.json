@@ -1,6 +1,6 @@
 {
-  "Version": 529,
-  "LastUpdate": "2026-04-02T08:41:28",
+  "Version": 534,
+  "LastUpdate": "2026-04-02T18:07:25",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -680,28 +680,14 @@
     },
     {
       "Id": "topic_morning_supplements_001",
-      "BlockVersion": 5,
-      "LastUpdate": "2026-04-02T08:50:00Z",
+      "BlockVersion": 6,
+      "LastUpdate": "2026-04-02T09:05:00Z",
       "Description": "MorningSupplements",
-      "SupplementsList": {
-        "DailyVits": {
-          "Name": "NOW Foods, Daily Vits (Veg Capsules)",
-          "Timing": "Morning Shake (Minimum \u002B2 hours post-yogurt)",
-          "ActiveIngredients": {
-            "Iron_mg": 0,
-            "Copper_mg": 1,
-            "Zinc_mg": 10,
-            "Vitamin_B12_mcg": 18,
-            "Other": "Fruit \u0026 Veggie Blend, Lutein, Lycopene"
-          },
-          "MicrobiomeInteraction": "Low interaction with pathogens due to ZERO Iron. Copper (1mg) and Zinc (10mg) are present. The 2-hour separation window remains optimal to avoid any unintended trace-mineral feeding."
-        }
-      },
       "active_research_directions": [
         "Transition contextual state management from Static JSON Injection to dynamic Model Context Protocol (MCP)"
       ],
       "suggested_actions": [],
-      "GlobalSyncVersion": 529
+      "GlobalSyncVersion": 530
     },
     {
       "Id": "record_morning_ashwagandha",
@@ -722,20 +708,42 @@
     },
     {
       "Id": "record_morning_daily_vits",
-      "ParentTopicId": "topic_morning_supplements_001",
-      "Type": "ContentItem",
+      "ParentId": "topic_morning_supplements_001",
       "BlockVersion": 1,
-      "LastUpdate": "2026-03-11T19:15:39",
-      "Name": "NOW Foods, Daily Vits",
+      "LastUpdate": "2026-04-02T09:05:00Z",
+      "Description": "NOW Foods, Daily Vits (Veg Capsules)",
+      "Timing": "Morning Shake (Minimum \u002B2 hours post-yogurt)",
       "ActiveIngredients": {
-        "Type": "Pre-defined Package"
+        "Vitamin_A_mcg": 1500,
+        "Vitamin_C_mg": 60,
+        "Vitamin_D_mcg": 100,
+        "Vitamin_E_mg": 20,
+        "Vitamin_K_mcg": 80,
+        "Thiamin_B1_mg": 1.5,
+        "Riboflavin_B2_mg": 1.7,
+        "Niacin_B3_mg": 20,
+        "Vitamin_B6_mg": 2,
+        "Folate_mcg_DFE": 680,
+        "Vitamin_B12_mcg": 18,
+        "Biotin_mcg": 300,
+        "Pantothenic_Acid_B5_mg": 10,
+        "Calcium_mg": 20,
+        "Iron_mg": 0,
+        "Iodine_mcg": 150,
+        "Magnesium_mg": 15,
+        "Zinc_mg": 10,
+        "Selenium_mcg": 35,
+        "Copper_mg": 1,
+        "Manganese_mg": 2,
+        "Chromium_mcg": 120,
+        "Molybdenum_mcg": 75,
+        "Potassium_mg": 10,
+        "Organic_Fruit_Veggie_Blend_mg": 50,
+        "Lutein_mcg": 100,
+        "Lycopene_mcg": 100
       },
-      "active_research_directions": [],
-      "suggested_research_directions": [],
-      "exhausted_research_directions": [],
-      "suggested_actions": [],
-      "accepted_actions": [],
-      "GlobalSyncVersion": 25
+      "MicrobiomeInteraction": "Low interaction with pathogens due to strict ZERO Iron. Contains trace Copper (1mg) and Zinc (10mg). The 2-hour separation window from L. reuteri administration remains the optimal failsafe.",
+      "GlobalSyncVersion": 531
     },
     {
       "Id": "record_morning_curcumin",
@@ -1204,8 +1212,8 @@
     },
     {
       "Id": "topic_system_directives_001",
-      "BlockVersion": 7,
-      "LastUpdate": "2026-04-02T08:50:00Z",
+      "BlockVersion": 8,
+      "LastUpdate": "2026-04-02T09:05:00Z",
       "Description": "System Directives and Behavioral Rules",
       "Directives": [
         "You are managing the attached JSON state. This is the absolute baseline.",
@@ -1217,7 +1225,8 @@
         "Always distinguish between known scientific facts and AI deductions.",
         "Perform comparative analysis between active research and history before updating protocols.",
         "ZERO-ASSUMPTION \u0026 DATA GATHERING PROTOCOL: Before formulating a definitive answer, you MUST explicitly identify any missing variables, unexpanded JSON nodes, or lack of context. If information is missing, STOP and ask the user a targeted clarification question. Probabilistic deduction to fill missing factual data is strictly forbidden.",
-        "HARD DATA RETRIEVAL MANDATE: If the user explicitly provides a URL, a specific product name, or requests chemical/nutritional specifications, you MUST execute a Web Search tool call before synthesizing an answer. NEVER rely on pre-trained weights for specific data parameters."
+        "HARD DATA RETRIEVAL MANDATE: If the user explicitly provides a URL, a specific product name, or requests chemical/nutritional specifications, you MUST execute a Web Search tool call before synthesizing an answer. NEVER rely on pre-trained weights for specific data parameters.",
+        "FLAT DATA HIERARCHY MANDATE: When adding specific items (e.g., individual supplements, meals, physical tools), NEVER use nested arrays or objects within a parent topic block. You MUST create a distinct, flat record block (e.g., \u0027Id\u0027: \u0027record_...\u0027) and structurally link it to the parent using the \u0027ParentId\u0027 field."
       ],
       "active_research_directions": [],
       "suggested_research_directions": [],
@@ -1226,9 +1235,10 @@
       "accepted_actions": [
         "Split JSON trigger string protocol: [SYNC_BLOCK_START] for state/IDE, [TASK_BLOCK] for AGENT_TASK.",
         "Implemented Zero-Assumption Protocol to halt execution and gather information when context is incomplete.",
-        "Enforced HARD DATA RETRIEVAL MANDATE to mechanically force Web Search on product specs, physically bypassing LLM probabilistic hallucination."
+        "Enforced HARD DATA RETRIEVAL MANDATE to mechanically force Web Search on product specs, physically bypassing LLM probabilistic hallucination.",
+        "Enforced FLAT DATA HIERARCHY MANDATE to maintain strict relational database constraints within JSON, preventing context bloat."
       ],
-      "GlobalSyncVersion": 528
+      "GlobalSyncVersion": 532
     },
     {
       "Id": "topic_fermentations_to_consider_001",
@@ -2068,6 +2078,45 @@
         "ActionTaken": "Pot turned off and transferred to fridge at Hour 20 due to visible pooling of whey."
       },
       "GlobalSyncVersion": 517
+    },
+    {
+      "Id": "topic_context_hallucination_prevention_001",
+      "BlockVersion": 2,
+      "LastUpdate": "2026-04-02T15:10:00Z",
+      "Description": "Research and resolution of LLM probabilistic hallucinations and context management failures",
+      "TechnicalConstraints": [
+        "Probabilistic Hallucination: The model falls back on pre-trained statistical weights to fill data gaps instead of fetching exact facts.",
+        "Lost in the Middle: Specific details buried in a massive static JSON payload are ignored or degraded in favor of beginning/end tokens.",
+        "Sycophancy (People-Pleasing): RLHF conditioning causes the model to prioritize immediate, confident-sounding answers over halting to ask for missing context.",
+        "JSON Bloat Degradation: As the configuration file grows, the context window fills up, replicating the exact same \u0027forgetfulness\u0027 issue seen in long unstructured chats."
+      ],
+      "SymptomsOfFailure": [
+        "Inventing ingredients or attributes that do not exist in the configured baseline.",
+        "Analyzing a complex system (like a daily supplement stack) while silently dropping or forgetting items due to context dilution.",
+        "Generating solutions without first establishing an empirical baseline or requesting exact parameters."
+      ],
+      "FailureScenariosToSolve": [
+        "Scenario: User asks for a comprehensive analysis of their supplement stack or daily routine.",
+        "Failure: The AI proceeds with the analysis based on a partial or degraded memory of the JSON/chat history, completely missing critical interactions because some items \u0027fell out\u0027 of its active attention window."
+      ],
+      "ComparativeExamples": [
+        {
+          "Scenario": "User asks: \u0027Review my daily supplements and identify any issues.\u0027",
+          "StandardFailure_Model": "AI generates an analysis based on the first few supplements it spots in the prompt, ignoring the others buried deep in the JSON, and falsely concludes \u0027no issues found\u0027.",
+          "TargetBehavior_TrainedModel": "AI stops and responds: \u0027Before I analyze, here is the exact list of supplements I currently hold in my active memory: [Item A, Item B, Item C...]. Is this list 100% complete and accurate? Please confirm before I process the interactions.\u0027"
+        }
+      ],
+      "SuccessCriteria": {
+        "Validation": "The AI consistently halts execution and asks targeted clarifying questions when variables are undefined or ambiguous.",
+        "DataToCollect": "Tracking the ratio of \u0027Halts/Clarifications\u0027 vs. \u0027Unprompted Assumptions\u0027 in future conversations.",
+        "FailureIndicator": "The AI provides a definitive answer containing assumed data not explicitly grounded in the JSON state or the immediate user prompt.",
+        "VerificationGate": "For any holistic analysis request, the AI MUST explicitly output its currently held data subset as a flat list and await explicit user confirmation (\u0027Is this complete?\u0027) before proceeding."
+      },
+      "active_research_directions": [
+        "Defining the precise wording and formatting of the \u0027Verification Gate\u0027 output to ensure it is highly readable and easy for the user to audit."
+      ],
+      "suggested_actions": [],
+      "GlobalSyncVersion": 534
     }
   ]
 }
