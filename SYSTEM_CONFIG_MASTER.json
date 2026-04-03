@@ -1,6 +1,6 @@
 {
-  "Version": 560,
-  "LastUpdate": "2026-04-02T19:52:13",
+  "Version": 565,
+  "LastUpdate": "2026-04-03T12:03:44",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -2121,7 +2121,7 @@
         "Adopted SUSE AI guidelines (Clear expectations, CoT, Output Constraints) for Meta-Prompt generation",
         "Drafted comprehensive Research Prompt to evaluate the Server-Side MCP architecture against industry alternatives"
       ],
-      "GlobalSyncVersion": 560
+      "GlobalSyncVersion": 562
     },
     {
       "Id": "record_strategy_prompt_formulation_001",
@@ -2175,6 +2175,16 @@
         "Implemented Parallel ATDD topology, Dual-Loop Routing protocol, and Risk-Tiered HITL Gates into the Master Workflow."
       ],
       "GlobalSyncVersion": 554
+    },
+    {
+      "Id": "record_arch_agentic_rag_001",
+      "ParentId": "topic_context_management_001",
+      "Type": "ArchitectureDecision",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-04-03T08:33:00Z",
+      "Name": "Agentic RAG Pipeline for Medical Triage",
+      "Description": "C# based architecture utilizing Vector DB for unstructured text retrieval, mathematical and semantic quality gates to prevent hallucinations, and a hard fallback routing to a human doctor when confidence thresholds are unmet.",
+      "GlobalSyncVersion": 565
     }
   ]
 }
