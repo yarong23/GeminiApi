@@ -1,6 +1,6 @@
 {
-  "Version": 566,
-  "LastUpdate": "2026-04-03T13:53:41",
+  "Version": 567,
+  "LastUpdate": "2026-04-09T10:53:46",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -680,14 +680,21 @@
     },
     {
       "Id": "topic_morning_supplements_001",
-      "BlockVersion": 6,
-      "LastUpdate": "2026-04-02T09:05:00Z",
+      "BlockVersion": 4,
+      "LastUpdate": "2026-04-09T10:53:33Z",
       "Description": "MorningSupplements",
-      "active_research_directions": [
-        "Transition contextual state management from Static JSON Injection to dynamic Model Context Protocol (MCP)"
+      "active_research_directions": [],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [
+        "Transitioning from combined D3\u002BK2 to isolated K2 supplementation due to endogenous UVB-driven D3 synthesis (Summer protocol)",
+        "Evaluating pharmacokinetics of K2 variants (MK-4 vs. MK-7) for once-daily dosing at 10:45"
       ],
       "suggested_actions": [],
-      "GlobalSyncVersion": 530
+      "accepted_actions": [
+        "Suspend \u0027NOW Foods Mega D3 \u0026 MK-7\u0027 during high-UVB exposure periods (Summer) to prevent hypercalcemia.",
+        "Integrate isolated Vitamin K2 (Menaquinone-7 / MK-7) at a baseline longevity dose of 100mcg, taken at 10:45 with the high-fat Morning Shake."
+      ],
+      "GlobalSyncVersion": 567
     },
     {
       "Id": "record_morning_ashwagandha",
