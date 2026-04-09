@@ -1,6 +1,6 @@
 {
-  "Version": 567,
-  "LastUpdate": "2026-04-09T10:53:46",
+  "Version": 568,
+  "LastUpdate": "2026-04-09T10:57:24",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -680,8 +680,8 @@
     },
     {
       "Id": "topic_morning_supplements_001",
-      "BlockVersion": 4,
-      "LastUpdate": "2026-04-09T10:53:33Z",
+      "BlockVersion": 5,
+      "LastUpdate": "2026-04-09T10:58:00Z",
       "Description": "MorningSupplements",
       "active_research_directions": [],
       "suggested_research_directions": [],
@@ -692,9 +692,10 @@
       "suggested_actions": [],
       "accepted_actions": [
         "Suspend \u0027NOW Foods Mega D3 \u0026 MK-7\u0027 during high-UVB exposure periods (Summer) to prevent hypercalcemia.",
-        "Integrate isolated Vitamin K2 (Menaquinone-7 / MK-7) at a baseline longevity dose of 100mcg, taken at 10:45 with the high-fat Morning Shake."
+        "Integrate isolated Vitamin K2 (Menaquinone-7 / MK-7) at a baseline longevity dose of 100mcg, taken at 10:45 with the high-fat Morning Shake.",
+        "Selected Product: Doctor\u0027s Best, Natural Vitamin K2 MK-7 (MenaQ7), 100 mcg (Gluten-Free, isolated formulation)."
       ],
-      "GlobalSyncVersion": 567
+      "GlobalSyncVersion": 568
     },
     {
       "Id": "record_morning_ashwagandha",
