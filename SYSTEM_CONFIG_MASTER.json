@@ -1,6 +1,6 @@
 {
-  "Version": 568,
-  "LastUpdate": "2026-04-09T10:57:24",
+  "Version": 569,
+  "LastUpdate": "2026-04-09T11:04:53",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -2212,6 +2212,22 @@
       ],
       "accepted_actions": [],
       "GlobalSyncVersion": 566
+    },
+    {
+      "Id": "topic_summer_protocol_001",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-04-09T11:06:00Z",
+      "Description": "Summer Protocol: Optimizing physiological response to prolonged daily UVB/UVA exposure (approx. 2 hours/day)",
+      "active_research_directions": [
+        "Evaluating phototoxic/photosensitizing interactions within the current supplement stack",
+        "Defining a \u0027Solar Nutrition\u0027 protocol to upregulate endogenous skin defense mechanisms (erythema prevention)",
+        "Establishing safe sun-exposure parameters (timing, duration) to maximize D3 synthesis while avoiding DNA damage"
+      ],
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [],
+      "suggested_actions": [],
+      "accepted_actions": [],
+      "GlobalSyncVersion": 569
     }
   ]
 }
