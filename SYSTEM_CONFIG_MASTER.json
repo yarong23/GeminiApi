@@ -1,6 +1,6 @@
 {
-  "Version": 569,
-  "LastUpdate": "2026-04-09T11:04:53",
+  "Version": 586,
+  "LastUpdate": "2026-04-10T18:16:03",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -95,8 +95,8 @@
     },
     {
       "Id": "topic_physical_endurance_001",
-      "BlockVersion": 1,
-      "LastUpdate": "2026-03-10T19:18:26",
+      "BlockVersion": 4,
+      "LastUpdate": "2026-04-04T20:55:00Z",
       "Description": "Increase physical endurance",
       "active_research_directions": [
         "Extending running duration beyond 2 minutes limit",
@@ -104,15 +104,16 @@
         "Gradual load increase for 10kg weight loss while preventing injuries",
         "Preventing leaky gut during intense stress via morning nutritional protocol"
       ],
-      "suggested_research_directions": [
-        "Lactobacillus plantarum TWK10 for muscle endurance"
+      "suggested_research_directions": [],
+      "exhausted_research_directions": [
+        "Integrating liquid coffee (Rejected due to mineral chelation and LES relaxation risks)",
+        "Evaluating Anhydrous Caffeine (pills) as an ergogenic aid (Theoretical protocol defined, but execution paused pending empirical validation methodology)"
       ],
-      "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [
         "Using smart watch to track intervals, distances, times, and heart rate during morning workout"
       ],
-      "GlobalSyncVersion": 25
+      "GlobalSyncVersion": 572
     },
     {
       "Id": "topic_supergut_starter_001",
@@ -680,10 +681,12 @@
     },
     {
       "Id": "topic_morning_supplements_001",
-      "BlockVersion": 5,
-      "LastUpdate": "2026-04-09T10:58:00Z",
+      "BlockVersion": 7,
+      "LastUpdate": "2026-04-09T12:05:00Z",
       "Description": "MorningSupplements",
-      "active_research_directions": [],
+      "active_research_directions": [
+        "Executing Deep Research query on Astaxanthin: Systemic photoprotection efficacy, gastrointestinal side effects (GERD/LES), and pharmacokinetic integration with the 10:45 AM high-fat matrix"
+      ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [
         "Transitioning from combined D3\u002BK2 to isolated K2 supplementation due to endogenous UVB-driven D3 synthesis (Summer protocol)",
@@ -695,7 +698,7 @@
         "Integrate isolated Vitamin K2 (Menaquinone-7 / MK-7) at a baseline longevity dose of 100mcg, taken at 10:45 with the high-fat Morning Shake.",
         "Selected Product: Doctor\u0027s Best, Natural Vitamin K2 MK-7 (MenaQ7), 100 mcg (Gluten-Free, isolated formulation)."
       ],
-      "GlobalSyncVersion": 568
+      "GlobalSyncVersion": 579
     },
     {
       "Id": "record_morning_ashwagandha",
@@ -2215,19 +2218,40 @@
     },
     {
       "Id": "topic_summer_protocol_001",
+      "BlockVersion": 7,
+      "LastUpdate": "2026-04-10T13:45:00Z",
+      "Description": "Summer Protocol: Optimizing physiological response to prolonged daily UVB/UVA exposure",
+      "active_research_directions": [],
+      "suggested_research_directions": [
+        "Evaluating the impact of intermittent, high-dose d-alpha-tocopherol (400 IU, once weekly) on systemic photoprotection efficacy and gamma-tocopherol displacement risk"
+      ],
+      "exhausted_research_directions": [
+        "Evaluating California Gold Nutrition CoQ10 100mg (Rejected: Wrong chemical form - Ubiquinone instead of Ubiquinol)",
+        "Evaluating Doctor\u0027s Best ALA 300mg (Rejected for now: Violation of Variable Isolation DOE protocol)"
+      ],
+      "suggested_actions": [],
+      "accepted_actions": [
+        "Establish Core Solar Antioxidant Network at 10:45 AM: Astaxanthin (12mg) \u002B Liposomal/Ester-C (500-1000mg).",
+        "Modify Vitamin E integration: Omega 3 Galil Vitamin E (400 IU) shifted from daily to intermittent dosing (maximum once weekly), STRICTLY co-ingested with Ester-C."
+      ],
+      "GlobalSyncVersion": 586
+    },
+    {
+      "Id": "topic_supplement_moringa_001",
       "BlockVersion": 1,
-      "LastUpdate": "2026-04-09T11:06:00Z",
-      "Description": "Summer Protocol: Optimizing physiological response to prolonged daily UVB/UVA exposure (approx. 2 hours/day)",
+      "LastUpdate": "2026-04-07T15:02:00Z",
+      "Description": "Evaluation of Moringa Oleifera integration into the daily supplement stack",
       "active_research_directions": [
-        "Evaluating phototoxic/photosensitizing interactions within the current supplement stack",
-        "Defining a \u0027Solar Nutrition\u0027 protocol to upregulate endogenous skin defense mechanisms (erythema prevention)",
-        "Establishing safe sun-exposure parameters (timing, duration) to maximize D3 synthesis while avoiding DNA damage"
+        "Analyzing Moringa\u0027s phytate content and its mineral chelation risk against Zinc Carnosine (06:00) and Magnesium (19:00)",
+        "Evaluating hypoglycemic risk (blood sugar reduction) prior to the 07:00 high-intensity workout"
       ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [],
-      "suggested_actions": [],
+      "suggested_actions": [
+        "Perform Socratic Verification to determine the exact physiological goal of adding Moringa before defining an administration protocol"
+      ],
       "accepted_actions": [],
-      "GlobalSyncVersion": 569
+      "GlobalSyncVersion": 573
     }
   ]
 }
