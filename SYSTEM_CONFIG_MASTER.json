@@ -1,6 +1,6 @@
 {
-  "Version": 586,
-  "LastUpdate": "2026-04-10T18:16:03",
+  "Version": 587,
+  "LastUpdate": "2026-04-11T10:47:08",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -159,8 +159,8 @@
     },
     {
       "Id": "topic_supergut_recipe_001",
-      "BlockVersion": 24,
-      "LastUpdate": "2026-04-01T16:55:00Z",
+      "BlockVersion": 25,
+      "LastUpdate": "2026-04-11T10:46:00Z",
       "Description": "SuperGutYogurtRecipe",
       "active_research_directions": [
         "Extend milk denaturation hold time at 82C to 20-30 minutes for cross-linking whey and casein",
@@ -170,7 +170,7 @@
         "Biohacking Reuterin Yield: Exploring exogenous addition of Glycerol \u002B Vitamin B12 (Cobalamin) to bypass metabolic bottlenecks of the pdu-cbi-cob-hem operon (On hold until temporal baseline is fully stabilized)"
       ],
       "exhausted_research_directions": [
-        "Incubate withou oxygen",
+        "Anaerobic incubation equipment / Strict oxygen depletion (Resolved: L. reuteri is a facultative anaerobe. The 400g butter formulation physically creates a top-layer lipid barrier [Fat Plug], and bacterial CO2 production naturally displacing ambient oxygen, rendering mechanical airlocks unnecessary.)",
         "Start incubation with less starter",
         "Adding exogenous glycerol for cryopreservation",
         "Deep research investigation into L. reuteri pangenome variance",
@@ -182,7 +182,7 @@
         "Standard allocation: 8 x 50ml cups to freezer (Starter Bank), remaining ~3L to fridge for consumption",
         "Procured Bluetooth Spear Probe pH meter \u002B KCL 3M storage solution \u002B Liquid Calibration Buffers to enforce kinetic prediction for future batches."
       ],
-      "GlobalSyncVersion": 520
+      "GlobalSyncVersion": 587
     },
     {
       "Id": "record_supergut_recipe_v1",
