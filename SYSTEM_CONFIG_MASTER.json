@@ -1,6 +1,6 @@
 {
-  "Version": 587,
-  "LastUpdate": "2026-04-11T10:47:08",
+  "Version": 593,
+  "LastUpdate": "2026-04-11T12:08:39",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -159,30 +159,29 @@
     },
     {
       "Id": "topic_supergut_recipe_001",
-      "BlockVersion": 25,
-      "LastUpdate": "2026-04-11T10:46:00Z",
+      "BlockVersion": 30,
+      "LastUpdate": "2026-04-11T11:20:00Z",
       "Description": "SuperGutYogurtRecipe",
       "active_research_directions": [
-        "Extend milk denaturation hold time at 82C to 20-30 minutes for cross-linking whey and casein",
-        "Calibrate incubation time for Gen 1\u002B using 50ml fresh starter (Adjusted Baseline: 20 hours based on empirical observation)"
+        "Hardware Calibration IN PROGRESS: Executing \u0027Water Bath Test Phase 2\u0027 (Negative Offset). Setting target to 25C (hardware minimum) to observe if bottom-heating overshoot lands within the safe 36C-39C incubation range."
       ],
       "suggested_research_directions": [
         "Biohacking Reuterin Yield: Exploring exogenous addition of Glycerol \u002B Vitamin B12 (Cobalamin) to bypass metabolic bottlenecks of the pdu-cbi-cob-hem operon (On hold until temporal baseline is fully stabilized)"
       ],
       "exhausted_research_directions": [
-        "Anaerobic incubation equipment / Strict oxygen depletion (Resolved: L. reuteri is a facultative anaerobe. The 400g butter formulation physically creates a top-layer lipid barrier [Fat Plug], and bacterial CO2 production naturally displacing ambient oxygen, rendering mechanical airlocks unnecessary.)",
-        "Start incubation with less starter",
-        "Adding exogenous glycerol for cryopreservation",
-        "Deep research investigation into L. reuteri pangenome variance",
-        "Gen 1 incubation targeting 24h\u002B (Resolved: Causes early syneresis. Limit to 20h without pH meter)."
+        "Anaerobic incubation equipment / Strict oxygen depletion",
+        "Hardware Calibration Phase 1 (Resolved: 36C target yields lethal 50C bottom overshoot).",
+        "Gen 1 incubation targeting 24h\u002B (Resolved: Causes early syneresis. Limit to 20h without pH meter).",
+        "Chemical structural failure via insufficient denaturation (Resolved: User confirmed 82C hold is executed; syneresis is exclusively hardware/thermal driven)."
       ],
       "accepted_actions": [
         "Confirm Master Batch (Gen 0) remains at 36 hours incubation",
         "Adopt 50ml airtight cups as the standard unit for the frozen Starter Bank",
         "Standard allocation: 8 x 50ml cups to freezer (Starter Bank), remaining ~3L to fridge for consumption",
-        "Procured Bluetooth Spear Probe pH meter \u002B KCL 3M storage solution \u002B Liquid Calibration Buffers to enforce kinetic prediction for future batches."
+        "Procured Bluetooth Spear Probe pH meter \u002B KCL 3M storage solution \u002B Liquid Calibration Buffers to enforce kinetic prediction for future batches.",
+        "Hardware Limitation Logged: Minimum manual temperature setting for the target Instant Pot is 25C."
       ],
-      "GlobalSyncVersion": 587
+      "GlobalSyncVersion": 592
     },
     {
       "Id": "record_supergut_recipe_v1",
@@ -2218,23 +2217,23 @@
     },
     {
       "Id": "topic_summer_protocol_001",
-      "BlockVersion": 7,
-      "LastUpdate": "2026-04-10T13:45:00Z",
+      "BlockVersion": 8,
+      "LastUpdate": "2026-04-10T14:05:00Z",
       "Description": "Summer Protocol: Optimizing physiological response to prolonged daily UVB/UVA exposure",
       "active_research_directions": [],
-      "suggested_research_directions": [
-        "Evaluating the impact of intermittent, high-dose d-alpha-tocopherol (400 IU, once weekly) on systemic photoprotection efficacy and gamma-tocopherol displacement risk"
-      ],
+      "suggested_research_directions": [],
       "exhausted_research_directions": [
         "Evaluating California Gold Nutrition CoQ10 100mg (Rejected: Wrong chemical form - Ubiquinone instead of Ubiquinol)",
-        "Evaluating Doctor\u0027s Best ALA 300mg (Rejected for now: Violation of Variable Isolation DOE protocol)"
+        "Evaluating Doctor\u0027s Best ALA 300mg (Rejected for now: Violation of Variable Isolation DOE protocol)",
+        "Evaluating Astaxanthin Synthesis Methods (Determined that natural Haematococcus pluvialis extraction is mandatory for clinical efficacy)"
       ],
       "suggested_actions": [],
       "accepted_actions": [
         "Establish Core Solar Antioxidant Network at 10:45 AM: Astaxanthin (12mg) \u002B Liposomal/Ester-C (500-1000mg).",
-        "Modify Vitamin E integration: Omega 3 Galil Vitamin E (400 IU) shifted from daily to intermittent dosing (maximum once weekly), STRICTLY co-ingested with Ester-C."
+        "Modify Vitamin E integration: Omega 3 Galil Vitamin E (400 IU) shifted from daily to intermittent dosing (maximum once weekly), STRICTLY co-ingested with Ester-C.",
+        "Astaxanthin Sourcing Constraint: Must be naturally derived from Haematococcus pluvialis microalgae (not synthetic or yeast-derived)."
       ],
-      "GlobalSyncVersion": 586
+      "GlobalSyncVersion": 593
     },
     {
       "Id": "topic_supplement_moringa_001",
