@@ -1,6 +1,6 @@
 {
-  "Version": 606,
-  "LastUpdate": "2026-04-12T14:00:45",
+  "Version": 608,
+  "LastUpdate": "2026-04-12T14:11:44",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -2291,6 +2291,26 @@
         "Potential blunting of ROS-hormesis post-workout (07:00 AM)"
       ],
       "GlobalSyncVersion": 606
+    },
+    {
+      "Id": "record_morning_omega_3_001",
+      "ParentId": "topic_morning_supplements_001",
+      "Type": "SupplementIntegration",
+      "BlockVersion": 2,
+      "LastUpdate": "2026-04-12T11:15:00Z",
+      "Name": "Omega 3 (Omega 3 Galil)",
+      "Description": "High-concentration Fish Oil. Baseline systemic anti-inflammatory support providing an optimal 2:1 EPA to DHA ratio. Must be kept refrigerated.",
+      "Dosage": "3 softgels (Total yield: 1200mg EPA / 600mg DHA = 1800mg active Omega 3)",
+      "Timing": "10:45 AM",
+      "Administration_Matrix": "Ingested with the high-fat morning shake (250g avocado) to maximize lipophilic absorption and micellization via bile salts.",
+      "Systemic_Dependencies": [
+        "Requires high-fat meal for optimal absorption"
+      ],
+      "Systemic_Clashes_To_Monitor": [
+        "Significant anti-platelet (blood-thinning) effect at 3 capsules. Strict monitoring required on weekly loading days when co-ingested with high-dose d-alpha-tocopherol (Vitamin E 400 IU).",
+        "Extreme ROS-Hormesis blunting: The combination of 1800mg Omega 3 \u002B Astaxanthin \u002B Curcumin \u002B Ester C may completely neutralize post-workout inflammatory signaling."
+      ],
+      "GlobalSyncVersion": 608
     }
   ]
 }
