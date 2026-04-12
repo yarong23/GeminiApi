@@ -1,6 +1,6 @@
 {
-  "Version": 593,
-  "LastUpdate": "2026-04-11T12:08:39",
+  "Version": 596,
+  "LastUpdate": "2026-04-11T13:29:17",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -159,11 +159,11 @@
     },
     {
       "Id": "topic_supergut_recipe_001",
-      "BlockVersion": 30,
-      "LastUpdate": "2026-04-11T11:20:00Z",
+      "BlockVersion": 33,
+      "LastUpdate": "2026-04-11T13:28:00Z",
       "Description": "SuperGutYogurtRecipe",
       "active_research_directions": [
-        "Hardware Calibration IN PROGRESS: Executing \u0027Water Bath Test Phase 2\u0027 (Negative Offset). Setting target to 25C (hardware minimum) to observe if bottom-heating overshoot lands within the safe 36C-39C incubation range."
+        "Evaluating the \u0027No-Boil\u0027 UHT Milk method vs. desired viscosity/texture outcomes."
       ],
       "suggested_research_directions": [
         "Biohacking Reuterin Yield: Exploring exogenous addition of Glycerol \u002B Vitamin B12 (Cobalamin) to bypass metabolic bottlenecks of the pdu-cbi-cob-hem operon (On hold until temporal baseline is fully stabilized)"
@@ -171,17 +171,14 @@
       "exhausted_research_directions": [
         "Anaerobic incubation equipment / Strict oxygen depletion",
         "Hardware Calibration Phase 1 (Resolved: 36C target yields lethal 50C bottom overshoot).",
-        "Gen 1 incubation targeting 24h\u002B (Resolved: Causes early syneresis. Limit to 20h without pH meter).",
-        "Chemical structural failure via insufficient denaturation (Resolved: User confirmed 82C hold is executed; syneresis is exclusively hardware/thermal driven)."
+        "Hardware Calibration Phase 2 - Negative Offset (Resolved: 25C target reached 41C in 30 mins. Hardware minimum-wattage overshoot makes direct-pot incubation physically impossible).",
+        "Searching for a single-vessel, 3L\u002B automated consumer machine for BOTH high-heat denaturation and precise 36C incubation (Resolved via Biohacker community deep-dive: Does not exist outside of $1,500\u002B commercial equipment like Thermomix)."
       ],
       "accepted_actions": [
-        "Confirm Master Batch (Gen 0) remains at 36 hours incubation",
-        "Adopt 50ml airtight cups as the standard unit for the frozen Starter Bank",
-        "Standard allocation: 8 x 50ml cups to freezer (Starter Bank), remaining ~3L to fridge for consumption",
-        "Procured Bluetooth Spear Probe pH meter \u002B KCL 3M storage solution \u002B Liquid Calibration Buffers to enforce kinetic prediction for future batches.",
-        "Hardware Limitation Logged: Minimum manual temperature setting for the target Instant Pot is 25C."
+        "Hardware Limitation Logged: Instant Pot thermostat is grossly inaccurate at low temps. Direct-pot fermentation is strictly prohibited.",
+        "Hardware strategy shifted to Biohacker consensus models: Either separate Stovetop Boil \u002B Premium Incubator (e.g., Luvele / Brod \u0026 Taylor), OR utilize UHT Milk bypass with basic incubators."
       ],
-      "GlobalSyncVersion": 592
+      "GlobalSyncVersion": 596
     },
     {
       "Id": "record_supergut_recipe_v1",
