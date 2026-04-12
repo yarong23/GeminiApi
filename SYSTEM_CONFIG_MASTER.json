@@ -1,6 +1,6 @@
 {
-  "Version": 596,
-  "LastUpdate": "2026-04-11T13:29:17",
+  "Version": 598,
+  "LastUpdate": "2026-04-12T13:56:56",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -677,24 +677,27 @@
     },
     {
       "Id": "topic_morning_supplements_001",
-      "BlockVersion": 7,
-      "LastUpdate": "2026-04-09T12:05:00Z",
+      "BlockVersion": 9,
+      "LastUpdate": "2026-04-12T13:58:00Z",
       "Description": "MorningSupplements",
       "active_research_directions": [
-        "Executing Deep Research query on Astaxanthin: Systemic photoprotection efficacy, gastrointestinal side effects (GERD/LES), and pharmacokinetic integration with the 10:45 AM high-fat matrix"
+        "Analyzing the ROS-Hormesis Paradox: Potential blunting of exercise adaptations (07:00 workout) by post-workout antioxidant load (10:45 AM)",
+        "Mapping the CYP450 metabolic bottleneck: Evaluating competition for CYP3A4 enzymes between Curcumin, Ashwagandha, and Astaxanthin"
       ],
       "suggested_research_directions": [],
       "exhausted_research_directions": [
         "Transitioning from combined D3\u002BK2 to isolated K2 supplementation due to endogenous UVB-driven D3 synthesis (Summer protocol)",
-        "Evaluating pharmacokinetics of K2 variants (MK-4 vs. MK-7) for once-daily dosing at 10:45"
+        "Evaluating pharmacokinetics of K2 variants (MK-4 vs. MK-7) for once-daily dosing at 10:45",
+        "Executing Deep Research query on Astaxanthin: Systemic photoprotection efficacy and gastrointestinal side effects"
       ],
       "suggested_actions": [],
       "accepted_actions": [
         "Suspend \u0027NOW Foods Mega D3 \u0026 MK-7\u0027 during high-UVB exposure periods (Summer) to prevent hypercalcemia.",
-        "Integrate isolated Vitamin K2 (Menaquinone-7 / MK-7) at a baseline longevity dose of 100mcg, taken at 10:45 with the high-fat Morning Shake.",
-        "Selected Product: Doctor\u0027s Best, Natural Vitamin K2 MK-7 (MenaQ7), 100 mcg (Gluten-Free, isolated formulation)."
+        "Integrate isolated Vitamin K2 (Menaquinone-7 / MK-7) at 100mcg at 10:45 AM with the high-fat Morning Shake.",
+        "ACTIVE: Integrated Micro Ingredients Astaxanthin 12mg at 10:45 AM with the high-fat shake.",
+        "ACTIVE: Integrated American Health Ester-C (1000mg) at 10:45 AM to recycle Astaxanthin without exacerbating GERD."
       ],
-      "GlobalSyncVersion": 579
+      "GlobalSyncVersion": 598
     },
     {
       "Id": "record_morning_ashwagandha",
