@@ -1,6 +1,6 @@
 {
-  "Version": 598,
-  "LastUpdate": "2026-04-12T13:56:56",
+  "Version": 606,
+  "LastUpdate": "2026-04-12T14:00:45",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -697,7 +697,7 @@
         "ACTIVE: Integrated Micro Ingredients Astaxanthin 12mg at 10:45 AM with the high-fat shake.",
         "ACTIVE: Integrated American Health Ester-C (1000mg) at 10:45 AM to recycle Astaxanthin without exacerbating GERD."
       ],
-      "GlobalSyncVersion": 598
+      "GlobalSyncVersion": 604
     },
     {
       "Id": "record_morning_ashwagandha",
@@ -2233,7 +2233,7 @@
         "Modify Vitamin E integration: Omega 3 Galil Vitamin E (400 IU) shifted from daily to intermittent dosing (maximum once weekly), STRICTLY co-ingested with Ester-C.",
         "Astaxanthin Sourcing Constraint: Must be naturally derived from Haematococcus pluvialis microalgae (not synthetic or yeast-derived)."
       ],
-      "GlobalSyncVersion": 593
+      "GlobalSyncVersion": 602
     },
     {
       "Id": "topic_supplement_moringa_001",
@@ -2251,6 +2251,46 @@
       ],
       "accepted_actions": [],
       "GlobalSyncVersion": 573
+    },
+    {
+      "Id": "record_morning_astaxanthin_001",
+      "ParentId": "topic_morning_supplements_001",
+      "Type": "SupplementIntegration",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-04-12T14:15:00Z",
+      "Name": "Astaxanthin 12mg (Micro Ingredients)",
+      "Description": "Integration of Astaxanthin for systemic photoprotection (Summer Protocol). Dose adjusted to 12mg based on N=1 research. Sourced from Haematococcus pluvialis.",
+      "Dosage": "12mg",
+      "Timing": "10:45 AM",
+      "Administration_Matrix": "Ingested with the high-fat morning shake (250g avocado) to maximize lipophilic absorption and micellization via bile salts.",
+      "Systemic_Dependencies": [
+        "Requires Ester-C for antioxidant recycling",
+        "Requires high-fat meal for bioavailability"
+      ],
+      "Systemic_Clashes_To_Monitor": [
+        "Potential blunting of ROS-hormesis post-workout (07:00 AM)",
+        "CYP3A4 metabolic competition with Curcumin and Ashwagandha"
+      ],
+      "GlobalSyncVersion": 605
+    },
+    {
+      "Id": "record_morning_ester_c_001",
+      "ParentId": "topic_morning_supplements_001",
+      "Type": "SupplementIntegration",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-04-12T14:15:00Z",
+      "Name": "Ester-C 1000mg (American Health)",
+      "Description": "Integration of non-acidic Vitamin C to serve as the electron donor and recycling agent for Astaxanthin and Vitamin E.",
+      "Dosage": "1000mg (Assumed baseline based on standard Ester-C clinical dosing, pending user confirmation)",
+      "Timing": "10:45 AM",
+      "Administration_Matrix": "Ingested with the morning shake. Formulated as Calcium Ascorbate to ensure pH neutrality.",
+      "Systemic_Dependencies": [
+        "Acts as the primary recycler for Astaxanthin and Vitamin E"
+      ],
+      "Systemic_Clashes_To_Monitor": [
+        "Potential blunting of ROS-hormesis post-workout (07:00 AM)"
+      ],
+      "GlobalSyncVersion": 606
     }
   ]
 }
