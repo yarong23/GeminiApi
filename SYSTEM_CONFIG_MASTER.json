@@ -1,6 +1,6 @@
 {
-  "Version": 610,
-  "LastUpdate": "2026-04-12T14:22:42",
+  "Version": 645,
+  "LastUpdate": "2026-04-13T11:14:45",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -159,26 +159,22 @@
     },
     {
       "Id": "topic_supergut_recipe_001",
-      "BlockVersion": 33,
-      "LastUpdate": "2026-04-11T13:28:00Z",
+      "BlockVersion": 37,
+      "LastUpdate": "2026-04-11T15:35:00Z",
       "Description": "SuperGutYogurtRecipe",
       "active_research_directions": [
-        "Evaluating the \u0027No-Boil\u0027 UHT Milk method vs. desired viscosity/texture outcomes."
-      ],
-      "suggested_research_directions": [
-        "Biohacking Reuterin Yield: Exploring exogenous addition of Glycerol \u002B Vitamin B12 (Cobalamin) to bypass metabolic bottlenecks of the pdu-cbi-cob-hem operon (On hold until temporal baseline is fully stabilized)"
+        "Hardware Calibration: SYSTEM HALTED. Awaiting acquisition of a high-precision Type K thermocouple digital thermometer to eliminate sensory drift."
       ],
       "exhausted_research_directions": [
         "Anaerobic incubation equipment / Strict oxygen depletion",
-        "Hardware Calibration Phase 1 (Resolved: 36C target yields lethal 50C bottom overshoot).",
-        "Hardware Calibration Phase 2 - Negative Offset (Resolved: 25C target reached 41C in 30 mins. Hardware minimum-wattage overshoot makes direct-pot incubation physically impossible).",
-        "Searching for a single-vessel, 3L\u002B automated consumer machine for BOTH high-heat denaturation and precise 36C incubation (Resolved via Biohacker community deep-dive: Does not exist outside of $1,500\u002B commercial equipment like Thermomix)."
+        "Hardware Calibration via Infrared/Laser Thermometer",
+        "Hardware Calibration via generic/cheap thermistors (Resolved: Sensory drift and inaccuracy render data untrustworthy)."
       ],
       "accepted_actions": [
-        "Hardware Limitation Logged: Instant Pot thermostat is grossly inaccurate at low temps. Direct-pot fermentation is strictly prohibited.",
-        "Hardware strategy shifted to Biohacker consensus models: Either separate Stovetop Boil \u002B Premium Incubator (e.g., Luvele / Brod \u0026 Taylor), OR utilize UHT Milk bypass with basic incubators."
+        "Hardware Limitation Logged: Instant Pot direct-pot fermentation is strictly prohibited until a verified liquid-probe thermal audit is completed.",
+        "Fermentation pipeline SUSPENDED pending measurement hardware upgrade."
       ],
-      "GlobalSyncVersion": 596
+      "GlobalSyncVersion": 621
     },
     {
       "Id": "record_supergut_recipe_v1",
@@ -677,27 +673,24 @@
     },
     {
       "Id": "topic_morning_supplements_001",
-      "BlockVersion": 9,
-      "LastUpdate": "2026-04-12T13:58:00Z",
+      "BlockVersion": 10,
+      "LastUpdate": "2026-04-12T20:45:00Z",
       "Description": "MorningSupplements",
-      "active_research_directions": [
-        "Analyzing the ROS-Hormesis Paradox: Potential blunting of exercise adaptations (07:00 workout) by post-workout antioxidant load (10:45 AM)",
-        "Mapping the CYP450 metabolic bottleneck: Evaluating competition for CYP3A4 enzymes between Curcumin, Ashwagandha, and Astaxanthin"
-      ],
+      "active_research_directions": [],
       "suggested_research_directions": [],
       "exhausted_research_directions": [
-        "Transitioning from combined D3\u002BK2 to isolated K2 supplementation due to endogenous UVB-driven D3 synthesis (Summer protocol)",
-        "Evaluating pharmacokinetics of K2 variants (MK-4 vs. MK-7) for once-daily dosing at 10:45",
-        "Executing Deep Research query on Astaxanthin: Systemic photoprotection efficacy and gastrointestinal side effects"
+        "Evaluating full 1000mg Ester-C bolus at 10:45 (Rejected: SVCT1 saturation causes osmotic fluid retention and gastric stretch)",
+        "Evaluating Curcumin and Ashwagandha in morning stack (Rejected: Curcumin relaxes LES and blocks CYP1A2; Ashwagandha irritates mucosa)"
       ],
       "suggested_actions": [],
       "accepted_actions": [
-        "Suspend \u0027NOW Foods Mega D3 \u0026 MK-7\u0027 during high-UVB exposure periods (Summer) to prevent hypercalcemia.",
-        "Integrate isolated Vitamin K2 (Menaquinone-7 / MK-7) at 100mcg at 10:45 AM with the high-fat Morning Shake.",
-        "ACTIVE: Integrated Micro Ingredients Astaxanthin 12mg at 10:45 AM with the high-fat shake.",
-        "ACTIVE: Integrated American Health Ester-C (1000mg) at 10:45 AM to recycle Astaxanthin without exacerbating GERD."
+        "Remove Inulin, Beta-Glucan, L-Glutamine, and Creatine from morning shake to prevent gas, vagal excitation, and osmotic stretch.",
+        "Remove Curcumin and Ashwagandha to restore LES tone and unblock CYP1A2 caffeine clearance.",
+        "Increase Astaxanthin to 24mg at 10:45 AM (Loading phase for 14-28 days) with the 150g Avocado matrix.",
+        "Split Ester-C dose: 500mg at 10:45 AM, 500mg in the evening.",
+        "Move Omega 3 to dinner to avoid excess morning fat loading."
       ],
-      "GlobalSyncVersion": 604
+      "GlobalSyncVersion": 630
     },
     {
       "Id": "record_morning_ashwagandha",
@@ -2310,27 +2303,69 @@
         "Significant anti-platelet (blood-thinning) effect at 3 capsules. Strict monitoring required on weekly loading days when co-ingested with high-dose d-alpha-tocopherol (Vitamin E 400 IU).",
         "Extreme ROS-Hormesis blunting: The combination of 1800mg Omega 3 \u002B Astaxanthin \u002B Curcumin \u002B Ester C may completely neutralize post-workout inflammatory signaling."
       ],
-      "GlobalSyncVersion": 608
+      "GlobalSyncVersion": 625
     },
     {
       "Id": "topic_systemic_recovery_001",
-      "BlockVersion": 2,
-      "LastUpdate": "2026-04-12T14:40:00Z",
-      "Description": "Acute Recovery Protocol: Addressing severe GERD flare-up, sleep architecture deterioration, and muscular fatigue cascade.",
+      "BlockVersion": 18,
+      "LastUpdate": "2026-04-12T23:55:00Z",
+      "Description": "Acute Recovery Protocol: Addressing severe GERD flare-up and LES dysfunction.",
       "active_research_directions": [
-        "Co-developing a hyper-targeted Deep Research prompt focusing exclusively on the morning mucosal repair protocol (06:00 AM) and its optimal acute dosing.",
-        "Analyzing the mechanistic relationship between inflammation and oxidative stress in the context of esophageal mucosal damage."
+        "Designing a neuromuscular and mechanical rehabilitation protocol for the Lower Esophageal Sphincter (LES) and Crural Diaphragm.",
+        "Evaluating Inspiratory Muscle Training (IMT) and Vagal Nerve Stimulation (VNS) for autonomic tone restoration post-trauma."
       ],
       "suggested_research_directions": [],
-      "exhausted_research_directions": [
-        "Executing broad, multi-factorial Deep Research query on the full GERD-Sleep loop (Rejected: Too broad for effective LLM parsing; shifting to localized investigation)"
-      ],
+      "exhausted_research_directions": [],
       "suggested_actions": [],
-      "accepted_actions": [
-        "Suspend high-intensity 07:00 AM workouts (running/calisthenics) until sleep architecture and LES tone are restored.",
-        "Shift to low-intensity steady state (LISS) light walking to maintain baseline circulation and parasympathetic tone without elevating cortisol."
+      "accepted_actions": [],
+      "GlobalSyncVersion": 644
+    },
+    {
+      "Id": "record_tool_analog_thermometer",
+      "ParentId": "topic_supergut_recipe_001",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-04-11T15:35:00Z",
+      "Description": "Analog Probe Thermometer for Liquid Incubation",
+      "RequiredSpecs": {
+        "Type": "Analog Bi-metal Dial or Glass Liquid-in-Glass",
+        "Scale": "Narrow range prioritizing 30-50C (e.g., 0-100C max) to ensure visual resolution",
+        "ProbeLength": "Minimum 15cm to reach the bottom of the Instant Pot"
+      },
+      "TradeOffs": "No battery required and high durability, BUT susceptible to parallax reading errors and slower thermal response times compared to digital thermocouples.",
+      "GlobalSyncVersion": 618
+    },
+    {
+      "Id": "record_tool_digital_thermometer",
+      "ParentId": "topic_supergut_recipe_001",
+      "BlockVersion": 3,
+      "LastUpdate": "2026-04-11T15:40:00Z",
+      "Description": "High-Precision Thermocouple Probe Thermometer",
+      "RequiredSpecs": {
+        "SensorType": "Type K Thermocouple (NOT generic thermistor)",
+        "Accuracy": "\u00B10.5C or better",
+        "ReadTime": "1 to 3 seconds",
+        "RecommendedModels": "ThermoWorks Thermapen, Inkbird / BBQ GO Instant Read"
+      },
+      "LocalSourcing_IL": {
+        "ThermoWorks_Thermapen": "Official importer: Traeger Grills Israel. Price: ~450 NIS.",
+        "Inkbird_BBQ_GO": "Official importer: Carmel Direct. Retailers: Himum Center, Sousvide.co.il, BBQ branches. Price: ~70-100 NIS."
+      },
+      "Goal": "Provide absolute thermal ground-truth to map the Instant Pot gradient and prevent false-positive failure analysis.",
+      "GlobalSyncVersion": 623
+    },
+    {
+      "Id": "topic_root_cause_analysis_001",
+      "Type": "DiagnosticLedger",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-04-13T08:14:19Z",
+      "Name": "GERD Root Cause Deep Dive",
+      "Description": "Active workspace for synthesizing symptom timelines, physical trauma history, and systemic clues to build a hyper-accurate Deep Research prompt.",
+      "Symptom_Timeline": [],
+      "Clues_And_Anomalies": [],
+      "Current_Hypotheses": [
+        "Primary cause might not be active gut inflammation (which has largely resolved via Super Gut protocol), but rather an undetected mechanical, neurological, or metabolic bottleneck triggered by the initial fasting trauma."
       ],
-      "GlobalSyncVersion": 610
+      "GlobalSyncVersion": 645
     }
   ]
 }
