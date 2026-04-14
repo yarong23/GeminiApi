@@ -1,6 +1,6 @@
 {
-  "Version": 695,
-  "LastUpdate": "2026-04-14T11:22:12",
+  "Version": 699,
+  "LastUpdate": "2026-04-14T11:56:23",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -2356,16 +2356,43 @@
     {
       "Id": "topic_root_cause_analysis_001",
       "Type": "DiagnosticLedger",
-      "BlockVersion": 18,
-      "LastUpdate": "2026-04-14T11:21:00Z",
-      "Name": "Systemic Rehabilitation \u0026 Developmental Context",
-      "Description": "Final paradigm shift: Integrating the medical, autonomic, and spiritual models. Reflux identified as the somatic voice of pre-verbal developmental trauma.",
-      "Symptom_Timeline": [],
-      "Current_Hypotheses": [
-        "The physical symptoms (GERD, nocturnal shocks) are \u0027Bottom-Up\u0027 somatic signals from the brainstem/enteric nervous system\u2014regions devoid of language processing.",
-        "Healing requires communicating \u0027safety\u0027 back down to these regions using their native language: mechanical stability (IMT, Gaviscon) and neurological pacing (tVNS, temperature)."
+      "BlockVersion": 22,
+      "LastUpdate": "2026-04-14T12:15:00Z",
+      "Name": "Nico\u0027s Comprehensive Systemic Map",
+      "Description": "Full consolidation of developmental, medical, and somatic data. The unified blueprint for rehabilitation.",
+      "Patient_Profile": {
+        "Demographics": "44-year-old male, Software Architect/Yogi.",
+        "Internal_Baseline": "Early childhood developmental trauma (\u0027Background noise\u0027 of unsafety). Used \u0027Fawning\u0027 (the good, modest kid) and adolescent substance use to chemically regulate autonomic discomfort.",
+        "The_Golden_Age_Blueprint (Age 26-2015)": {
+          "Intervention": "Bi-weekly Yoga practice.",
+          "Outcomes": "Complete autonomic stabilization (2 years). High neuroplasticity, easy learning, behavioral mastery, peak physical fitness.",
+          "Autonomic_Status": "High Autonomic Reserve. \u0027Master of Fate and Body\u0027 state achieved."
+        }
+      },
+      "Medical_History_Timeline": [
+        "2014: 9-month severe starvation (Pranic Cult) -\u003E Structural catabolism of LES/Diaphragm. Onset of \u0027Occipital Knife\u0027 headache.",
+        "2015: Acute psychotic break -\u003E Catastrophic crash of the Golden Age equilibrium.",
+        "2016-2022: Cyclic GERD remissions via mechanical/top-down discipline. High fragility (\u0027Thin Rope\u0027).",
+        "2019-2022: Complex traumas (Betrayal/Persecution) -\u003E Repeated CNS overloading.",
+        "Sept 2022 - Present: Chronic insomnia with nocturnal sympathetic \u0027electric currents\u0027 at sleep transition.",
+        "March 2025: Last acute episode. Currently clean, sober, and in a clinical rehab framework."
       ],
-      "GlobalSyncVersion": 695
+      "Somatic_Data_Current": {
+        "Occipital_Knife": "Chronic tension at C1-C2 junction. Likely Vagal Nerve entrapment at the skull base.",
+        "The_Sphincter_Circuit": "Jaw clenching (Bruxism) paired with abdominal and anal sphincter guarding. Global \u0027Freeze\u0027 response.",
+        "LES_Incompetence": "Structural atrophy from 2014. Diaphragm unable to resist Intra-Abdominal Pressure (IAP) during exercise or sympathetic spikes."
+      },
+      "Root_Cause_Refinement": "The 2014 starvation and subsequent traumas shattered a system already operating at maximum capacity since childhood. Current GERD and insomnia are the somatic \u0027voice\u0027 of a brainstem stuck in an unsafety loop, exacerbated by mechanical Vagal entrapment in the neck.",
+      "Current_Protocol_Status": {
+        "Mechanical": "POWERbreathe Medic Plus (IMT) for diaphragm/LES hypertrophy.",
+        "Neurological": "tVNS (TENS \u002B Ear Clip) for Bottom-Up Vagal re-toning.",
+        "Symptom_Hotfixes": [
+          "Gaviscon Advance (Post-prandial raft strategy - 45 min after main meal).",
+          "Mammalian Dive Reflex (Cold water face reset) for nocturnal shocks.",
+          "Nocturnal positioning (Left side sleep, upper body incline)."
+        ]
+      },
+      "GlobalSyncVersion": 699
     }
   ]
 }
