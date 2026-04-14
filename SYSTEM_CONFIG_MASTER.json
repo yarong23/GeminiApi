@@ -1,6 +1,6 @@
 {
-  "Version": 654,
-  "LastUpdate": "2026-04-13T11:30:53",
+  "Version": 685,
+  "LastUpdate": "2026-04-13T19:11:27",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -2318,7 +2318,7 @@
       "exhausted_research_directions": [],
       "suggested_actions": [],
       "accepted_actions": [],
-      "GlobalSyncVersion": 652
+      "GlobalSyncVersion": 682
     },
     {
       "Id": "record_tool_analog_thermometer",
@@ -2356,27 +2356,18 @@
     {
       "Id": "topic_root_cause_analysis_001",
       "Type": "DiagnosticLedger",
-      "BlockVersion": 2,
-      "LastUpdate": "2026-04-13T11:35:00Z",
-      "Name": "GERD Root Cause Deep Dive",
-      "Description": "Active workspace for synthesizing symptom timelines, physical trauma history, and systemic clues to build a hyper-accurate Deep Research prompt.",
+      "BlockVersion": 16,
+      "LastUpdate": "2026-04-13T19:15:00Z",
+      "Name": "GERD Rehabilitation \u0026 Routine Optimization",
+      "Description": "Integrating clinical research and \u0027Hotfixes\u0027 into the specific daily schedule for immediate symptom relief.",
       "Symptom_Timeline": [
-        "March 2014: 8-day absolute fast (\u0027Pranic Nourishment\u0027 cult). Initial euphoria, rapid physical exhaustion during exercise.",
-        "March-April 2014 (Month 1): Continued zero-calorie state. 7kg severe weight loss. Extreme metabolic shift.",
-        "April 2014 - Jan 2015 (Months 2-9): Severe caloric restriction (~800 kcal/day). Masked physical decline via cannabis/psychedelics. Maintained false sense of well-being.",
-        "January 2015: Cult realization -\u003E Severe psychological trauma -\u003E Psychotic break -\u003E Psychiatric hospitalization.",
-        "January 2015 onwards: Hospitalized refeeding phase. Resumed standard caloric intake."
+        "Current Routine (April 2026): 2 meals/day. Morning yogurt -\u003E 2hr gap -\u003E Supplement Shake -\u003E 14:00 Main Lunch -\u003E 8hr fast -\u003E 22:00 Sleep."
       ],
-      "Clues_And_Anomalies": [
-        "Autonomic Shock: The psychotic break indicates a catastrophic surge of catecholamines (adrenaline/noradrenaline) and cortisol, essentially \u0027frying\u0027 the Vagus nerve (parasympathetic shutdown).",
-        "Muscle Catabolism: 9 months of starvation inevitably forced the body to consume its own smooth muscle tissue (including the LES and Diaphragm) for amino acids.",
-        "Neurotransmitter Depletion: Psychedelic load combined with zero protein intake means the brain was firing heavily without the raw materials (Tryptophan/Tyrosine) to rebuild serotonin/dopamine, leading to the psychotic snap.",
-        "Microbiome Starvation: 9 months of extreme fasting starved keystone gut bacteria. Without fiber, bacteria consume the intestinal mucosal lining."
+      "Active_Research_Directions": [
+        "Post-prandial Gaviscon \u0027Raft\u0027 timing optimization.",
+        "Mitigating supplement-induced esophageal irritation."
       ],
-      "Current_Hypotheses": [
-        "GERD is the mechanical and neurological scar tissue of the 2014-2015 starvation/trauma event. The Vagus nerve was locked in sympathetic overdrive, and the LES smooth muscle was catabolized and never properly rebuilt during the refeeding phase."
-      ],
-      "GlobalSyncVersion": 654
+      "GlobalSyncVersion": 685
     }
   ]
 }
