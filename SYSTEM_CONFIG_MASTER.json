@@ -1,6 +1,6 @@
 {
-  "Version": 699,
-  "LastUpdate": "2026-04-14T11:56:23",
+  "Version": 711,
+  "LastUpdate": "2026-04-15T10:39:06",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -159,22 +159,22 @@
     },
     {
       "Id": "topic_supergut_recipe_001",
-      "BlockVersion": 37,
-      "LastUpdate": "2026-04-11T15:35:00Z",
+      "BlockVersion": 41,
+      "LastUpdate": "2026-04-15T10:45:00Z",
       "Description": "SuperGutYogurtRecipe",
       "active_research_directions": [
-        "Hardware Calibration: SYSTEM HALTED. Awaiting acquisition of a high-precision Type K thermocouple digital thermometer to eliminate sensory drift."
+        "Pilot Run Execution: 1L direct-pot batch using validated Sous Vide hold (88C) and corrected biological inoculation (20g/L). Continuous telemetry via direct-contact bottom probe to definitively clear or condemn Instant Pot hardware spikes."
       ],
       "exhausted_research_directions": [
         "Anaerobic incubation equipment / Strict oxygen depletion",
-        "Hardware Calibration via Infrared/Laser Thermometer",
-        "Hardware Calibration via generic/cheap thermistors (Resolved: Sensory drift and inaccuracy render data untrustworthy)."
+        "Hardware Calibration Phase 2 - Negative Offset (Resolved)",
+        "Investigating Biological Kinetics (Resolved: Strain competition confirmed due to severe under-inoculation in previous failed batch)"
       ],
       "accepted_actions": [
-        "Hardware Limitation Logged: Instant Pot direct-pot fermentation is strictly prohibited until a verified liquid-probe thermal audit is completed.",
-        "Fermentation pipeline SUSPENDED pending measurement hardware upgrade."
+        "Initiating controlled 1L \u0027Live Fire\u0027 direct-pot test to validate biological correction (20g starter per 1L) and hardware bottom-temperatures simultaneously.",
+        "Probe MUST maintain direct physical contact with the stainless steel bottom for accurate worst-case thermal data."
       ],
-      "GlobalSyncVersion": 621
+      "GlobalSyncVersion": 711
     },
     {
       "Id": "record_supergut_recipe_v1",
@@ -2332,7 +2332,7 @@
         "ProbeLength": "Minimum 15cm to reach the bottom of the Instant Pot"
       },
       "TradeOffs": "No battery required and high durability, BUT susceptible to parallax reading errors and slower thermal response times compared to digital thermocouples.",
-      "GlobalSyncVersion": 618
+      "GlobalSyncVersion": 702
     },
     {
       "Id": "record_tool_digital_thermometer",
@@ -2351,7 +2351,7 @@
         "Inkbird_BBQ_GO": "Official importer: Carmel Direct. Retailers: Himum Center, Sousvide.co.il, BBQ branches. Price: ~70-100 NIS."
       },
       "Goal": "Provide absolute thermal ground-truth to map the Instant Pot gradient and prevent false-positive failure analysis.",
-      "GlobalSyncVersion": 623
+      "GlobalSyncVersion": 707
     },
     {
       "Id": "topic_root_cause_analysis_001",
