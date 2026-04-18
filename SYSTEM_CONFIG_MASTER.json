@@ -1,6 +1,6 @@
 {
-  "Version": 711,
-  "LastUpdate": "2026-04-15T10:39:06",
+  "Version": 728,
+  "LastUpdate": "2026-04-15T17:57:26",
   "Topics": [
     {
       "Id": "topic_acid_reflux_001",
@@ -159,22 +159,21 @@
     },
     {
       "Id": "topic_supergut_recipe_001",
-      "BlockVersion": 41,
-      "LastUpdate": "2026-04-15T10:45:00Z",
+      "BlockVersion": 43,
+      "LastUpdate": "2026-04-15T18:10:00Z",
       "Description": "SuperGutYogurtRecipe",
-      "active_research_directions": [
-        "Pilot Run Execution: 1L direct-pot batch using validated Sous Vide hold (88C) and corrected biological inoculation (20g/L). Continuous telemetry via direct-contact bottom probe to definitively clear or condemn Instant Pot hardware spikes."
-      ],
+      "active_research_directions": [],
       "exhausted_research_directions": [
         "Anaerobic incubation equipment / Strict oxygen depletion",
-        "Hardware Calibration Phase 2 - Negative Offset (Resolved)",
-        "Investigating Biological Kinetics (Resolved: Strain competition confirmed due to severe under-inoculation in previous failed batch)"
+        "Hardware Calibration Phase 2 - Negative Offset",
+        "Investigating Biological Kinetics (Resolved: Pilot test confirms terminal strain contamination. Fast-acting ambient bacteria/yeast have permanently outcompeted the L. reuteri in the current starter bank, causing rapid 10-hour acidification and gas production)."
       ],
       "accepted_actions": [
-        "Initiating controlled 1L \u0027Live Fire\u0027 direct-pot test to validate biological correction (20g starter per 1L) and hardware bottom-temperatures simultaneously.",
-        "Probe MUST maintain direct physical contact with the stainless steel bottom for accurate worst-case thermal data."
+        "ABORT current fermentation pilot.",
+        "PURGE action ordered: All existing frozen and refrigerated starter cultures from the current lineage must be discarded.",
+        "Project Reset: A fresh inoculation protocol using sealed, commercial L. reuteri tablets (e.g., BioGaia) is required to re-establish Gen 0."
       ],
-      "GlobalSyncVersion": 711
+      "GlobalSyncVersion": 713
     },
     {
       "Id": "record_supergut_recipe_v1",
@@ -2356,43 +2355,31 @@
     {
       "Id": "topic_root_cause_analysis_001",
       "Type": "DiagnosticLedger",
-      "BlockVersion": 22,
-      "LastUpdate": "2026-04-14T12:15:00Z",
+      "BlockVersion": 24,
+      "LastUpdate": "2026-04-15T18:05:00Z",
       "Name": "Nico\u0027s Comprehensive Systemic Map",
-      "Description": "Full consolidation of developmental, medical, and somatic data. The unified blueprint for rehabilitation.",
-      "Patient_Profile": {
-        "Demographics": "44-year-old male, Software Architect/Yogi.",
-        "Internal_Baseline": "Early childhood developmental trauma (\u0027Background noise\u0027 of unsafety). Used \u0027Fawning\u0027 (the good, modest kid) and adolescent substance use to chemically regulate autonomic discomfort.",
-        "The_Golden_Age_Blueprint (Age 26-2015)": {
-          "Intervention": "Bi-weekly Yoga practice.",
-          "Outcomes": "Complete autonomic stabilization (2 years). High neuroplasticity, easy learning, behavioral mastery, peak physical fitness.",
-          "Autonomic_Status": "High Autonomic Reserve. \u0027Master of Fate and Body\u0027 state achieved."
-        }
-      },
-      "Medical_History_Timeline": [
-        "2014: 9-month severe starvation (Pranic Cult) -\u003E Structural catabolism of LES/Diaphragm. Onset of \u0027Occipital Knife\u0027 headache.",
-        "2015: Acute psychotic break -\u003E Catastrophic crash of the Golden Age equilibrium.",
-        "2016-2022: Cyclic GERD remissions via mechanical/top-down discipline. High fragility (\u0027Thin Rope\u0027).",
-        "2019-2022: Complex traumas (Betrayal/Persecution) -\u003E Repeated CNS overloading.",
-        "Sept 2022 - Present: Chronic insomnia with nocturnal sympathetic \u0027electric currents\u0027 at sleep transition.",
-        "March 2025: Last acute episode. Currently clean, sober, and in a clinical rehab framework."
-      ],
-      "Somatic_Data_Current": {
-        "Occipital_Knife": "Chronic tension at C1-C2 junction. Likely Vagal Nerve entrapment at the skull base.",
-        "The_Sphincter_Circuit": "Jaw clenching (Bruxism) paired with abdominal and anal sphincter guarding. Global \u0027Freeze\u0027 response.",
-        "LES_Incompetence": "Structural atrophy from 2014. Diaphragm unable to resist Intra-Abdominal Pressure (IAP) during exercise or sympathetic spikes."
-      },
-      "Root_Cause_Refinement": "The 2014 starvation and subsequent traumas shattered a system already operating at maximum capacity since childhood. Current GERD and insomnia are the somatic \u0027voice\u0027 of a brainstem stuck in an unsafety loop, exacerbated by mechanical Vagal entrapment in the neck.",
       "Current_Protocol_Status": {
         "Mechanical": "POWERbreathe Medic Plus (IMT) for diaphragm/LES hypertrophy.",
-        "Neurological": "tVNS (TENS \u002B Ear Clip) for Bottom-Up Vagal re-toning.",
+        "Neurological": "tVNS setup finalized: TensCare \u0027Perfect TENS\u0027. Awaiting Ear Clip. Temporary Pivot: Using TENS pads for Myofascial Jaw/Masseter release (Bruxism).",
         "Symptom_Hotfixes": [
           "Gaviscon Advance (Post-prandial raft strategy - 45 min after main meal).",
           "Mammalian Dive Reflex (Cold water face reset) for nocturnal shocks.",
           "Nocturnal positioning (Left side sleep, upper body incline)."
         ]
       },
-      "GlobalSyncVersion": 699
+      "GlobalSyncVersion": 728
+    },
+    {
+      "Id": "topic_system_sync_status",
+      "BlockVersion": 1,
+      "LastUpdate": "2026-04-15T17:53:24Z",
+      "Description": "Acknowledge sync from User partial update.",
+      "active_research_directions": [],
+      "exhausted_research_directions": [],
+      "accepted_actions": [
+        "Received and merged updated blocks: topic_supergut_recipe_001 (v43), record_tool_digital_thermometer (v3), topic_root_cause_analysis_001 (v22)."
+      ],
+      "GlobalSyncVersion": 726
     }
   ]
 }
